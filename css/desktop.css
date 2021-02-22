@@ -10,9 +10,8 @@
 //
 ///////////////////////////////////////////////////*/
 @font-face {
-	font-family: "myfont";
-	src: url(../fonts/.woff) format("woff"),
-				url(../fonts/.otf) format("otf");
+	font-family: "apple_chancery";
+	src: url(../fonts/Apple_Chancery.ttf) format("truetype");
 }
 
 
@@ -20,6 +19,7 @@
 html{
 	color: #000;
 	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
 	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
@@ -42,15 +42,16 @@ section,
 	height: auto;
 	position: relative;
 }
-.l_container{
+/* .l_container{
 	width: 95%;
 	margin: 0 auto;
-}
+} */
 .container{
 	width: 90%;
+	max-width: 1180px;
 	margin: 0 auto;
 }
-.m_container{
+/* .m_container{
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1080px;
@@ -59,14 +60,14 @@ section,
 	width: 90%;
 	margin: 0 auto;
 	max-width: 960px;
-}
+} */
 @media screen and (min-width:1540px) {
-	.l_container{max-width: 1680px;}
-	.container{max-width: 1480px;}
+	/* .l_container{max-width: 1680px;} */
+	/* .container{max-width: 1380px;} */
 }
 @media screen and (min-width:1280px) and ( max-width:1539px) {
 	html{font-size: 15px;}
-	.container{max-width: 1280px;}
+	/* .container{max-width: 1180px;} */
 }
 @media screen and (min-width:768px) and ( max-width:1279px) {
 	html{font-size: 14px;}
@@ -88,6 +89,10 @@ section,
 	--twitter: #1DA1F2;
 	--line: #00B900;
 	--youtube: #DA1725;
+	--green: #2e9648;
+	--emegreen: #35b79d;
+	--orange: #f7ad6f;
+	--pink: #f29c9f;
 }
 .objectCover {
 	width:100%;
@@ -116,19 +121,347 @@ section,
 //            ▼ 共通 ▼
 //
 ///////////////////////////////////////////////////*/
-
+main{
+	margin-top: 8.125rem;
+}
+.notoserif{
+	font-family: 'Noto Serif JP', serif;
+}
+.hiragino{
+	font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.apple_chancery{
+	font-family: "apple_chancery", serif;
+}
+.btn a{
+	position: relative;
+	font-size: 1rem;
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 700;
+	color: #fff;
+	background: var(--green);
+	padding: 0.5rem 0;
+	width: 18.75rem;
+	border: solid 1px var(--green);
+	border-radius: 2rem;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: color .3s cubic-bezier(.79,.01,.21,.96);
+}
+.btn.white a{
+	color: var(--green);
+	background: #fff;
+}
+.btn.white a:hover{
+	color: #fff;
+}
+.btn a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #fff;
+	transition: .3s cubic-bezier(.79,.01,.21,.96);
+}
+.btn.white a::before{
+	background: var(--green);
+}
+.btn a:hover::before{
+	width: 100%;
+}
+.btn a span{
+	position: relative;
+	z-index: 2;
+}
+.btn a span::after{
+	position: absolute;
+	content: '＞';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%) translateY(0.05rem);
+	margin-left: 0.3rem;
+	transition: transform .3s cubic-bezier(.79,.01,.21,.96);
+}
+.btn a:hover span::after{
+	transform: translateY(-50%) translateY(0.05rem) translateX(0.5rem);
+}
+.cat.news{
+	background: #8ecebe;
+}
+.cat.event{
+	background: #f5bbd4;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ swiper ▼
+//
+///////////////////////////////////////////////////*/
+.swiper-container-free-mode > .swiper-wrapper{-webkit-transition-timing-function:linear!important; -o-transition-timing-function:linear!important; transition-timing-function:linear!important; }
 /*///////////////////////////////////////////////////
 //
 //            ▼ ナビ ▼
 //
 ///////////////////////////////////////////////////*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background: #f9f6f1;
+	z-index: 50000;
+}
+.header_in{
+	height: 8.125rem;
+	display: flex;
+}
+header .logo{
+	position: relative;
+	display: inline-block;
+}
+header .logo a{
+	width: 8.29625rem;
+}
+body.top header .logo a{
+	width: 11.875rem;
+}
+header .logo a img{
+	width: 100%;
+	height: auto;
+}
+header .logo .txt{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 2rem;
+	left: 100%;
+	width: 100%;
+	margin-left: 4rem;
+}
+body.top header .logo .txt{
+	margin-left: 2rem;
+}
+header .logo .txt .sitename{
+	font-size: 2.26rem;
+	font-weight: 900;
+	letter-spacing: 0.36em;
+	line-height: 1;
+	color: #254812;
+	margin-right: 1rem;
+	white-space: nowrap;
+}
+header .logo .txt .sub p{
+	font-weight: 400;
+	line-height: 1.3;
+	white-space: nowrap;
+}
+header .logo .txt .sub .txt01{
+	font-size: 1rem;
+	letter-spacing: 0.44em;
+	color: #254812;
+}
+header .logo .txt .sub .txt02{
+	font-size: 0.75rem;
+	color: #040000;
+}
 
+header nav{
+	width: 100%;
+	margin: auto 0 0 5.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+body.top header nav{
+	margin: auto 0 0 4rem;
+}
+header nav .btn_wrap{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.25rem;
+}
+header nav .btn_wrap .btn01{
+	background: #fff;
+}
+header nav .btn_wrap .btn01.taiken{
+	margin-right: 1rem;
+}
+header nav .btn_wrap .btn01 a{
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 500;
+	line-height: 1;
+	padding: 0.5rem 1.5rem;
+	border-radius: 1.5rem;
+	transition: .3s;
+}
+header nav .btn_wrap .btn01.taiken a{
+	color: #1aad90;
+	border: solid 2px #1aad90;
+}
+header nav .btn_wrap .btn01.reservation a{
+	color: #2e9648;
+	border: solid 2px #2e9648;
+}
+header nav .btn_wrap .btn01 a:hover{
+	opacity: .6;
+}
+header nav .btn_wrap .btn01 a span{
+	position: relative;
+	display: inline-block;
+	padding-left: 1.5rem;
+}
+header nav .btn_wrap .btn01 a span::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 19px;
+}
+header nav .btn_wrap .btn01.taiken a span::before{
+	background: url(../images/common/taiken_icon.png) center center / contain no-repeat;
+}
+header nav .btn_wrap .btn01.reservation a span::before{
+	background: url(../images/common/reservation_icon.png) center center / contain no-repeat;
+}
+
+header nav ul{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav ul li a{
+	font-size: 0.875rem;
+	font-family: 'Noto Serif JP', serif;
+	color: #040000;
+	padding: 0.5rem 0;
+	text-align: center;
+	transition: .3s;
+}
+header nav ul li a:hover{
+	opacity: .6;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ フッター ▼
 //
 ///////////////////////////////////////////////////*/
 
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ01 ▼
+//
+///////////////////////////////////////////////////*/
+.top01{
+	padding: 6rem 0 0;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ02 ▼
+//
+///////////////////////////////////////////////////*/
+.top02{
+	padding: 4rem 0;
+}
+.top02 .box{
+	display: flex;
+}
+.top02 .box h3{
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--green);
+	border-bottom: dotted 1px #7f7f7f;
+	padding-bottom: 0.5rem;
+}
+.top02 .box .classroom_list{
+	width: 38%;
+	border-right: dotted 1px #7f7f7f;
+	padding: 0 4rem;
+	text-align: center;
+}
+.top02 .box .classroom_list .txt{
+	margin-top: 1.5rem;
+}
+.top02 .box .classroom_list .txt p{
+	font-size: 0.875rem;
+	margin-bottom: 0.75rem;
+}
+.top02 .box .classroom_list .txt li a{
+	line-height: 2.5;
+	color: var(--green);
+	transition: .3s;
+}
+.top02 .box .classroom_list .txt li a:hover{
+	opacity: .6;
+}
+.top02 .box .classroom_list .txt li a span{
+	position: relative;
+}
+.top02 .box .classroom_list .txt li a span::after{
+	position: absolute;
+	content: '>';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	margin-left: 0.3rem;
+	transition: .3s;
+}
+.top02 .box .classroom_list .txt li a:hover span::after{
+	transform: translateY(-50%) translateX(0.25rem);
+}
+.top02 .box .classroom_list .btn{
+	margin-top: 2rem;
+}
+.top02 .box .classroom_list .btn.white a{
+	max-width: 16.875rem;
+	width: 100%;
+	font-weight: 500;
+}
+.top02 .box .news_event{
+	width: 62%;
+	padding: 0 0 0 4rem;
+}
+.top02 .box .news_event .item{
+	margin-top: 1.5rem;
+}
+.top02 .box .news_event .item article{
+	margin-top: 0.25rem;
+}
+.top02 .box .news_event .item article:first-of-type{
+	margin-top: 0;
+}
+.top02 .box .news_event .item article a{
+	display: flex;
+	align-items: center;
+	transition: .3s;
+}
+.top02 .box .news_event .item article a:hover{
+	opacity: .6;
+}
+.top02 .box .news_event .item article a time{
+	display: inline-block;
+	font-size: 0.875rem;
+	margin-right: 2.5rem;
+}
+.top02 .box .news_event .item article a .cat{
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: 0.25rem;
+	width: 5rem;
+	text-align: center;
+	border-radius: 0.3rem;
+	margin-right: 1.5rem;
+}
+.top02 .box .news_event .item article a h4{
+	font-size: 0.875rem;
+	font-weight: 400;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ 下層共通 ▼

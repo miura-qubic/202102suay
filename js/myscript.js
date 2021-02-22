@@ -18,7 +18,16 @@ const tabletwidth = 1025;
 
 $(function () {
 
-
+	var swiper01 = new Swiper('.top01 .swiper-container', {
+		loop: true,
+		speed: 8000,
+		slidesPerView: 9.3,
+		centeredSlides: true,
+		freeMode: true,
+		autoplay: {
+			delay: 1
+		}
+	});
 
 
 
