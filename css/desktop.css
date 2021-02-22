@@ -283,9 +283,6 @@ header nav .btn_wrap{
 	align-items: center;
 	margin-bottom: 1.25rem;
 }
-header nav .btn_wrap .btn01{
-	background: #fff;
-}
 header nav .btn_wrap .btn01.taiken{
 	margin-right: 1rem;
 }
@@ -295,6 +292,7 @@ header nav .btn_wrap .btn01 a{
 	line-height: 1;
 	padding: 0.5rem 1.5rem;
 	border-radius: 1.5rem;
+	background: #fff;
 	transition: .3s;
 }
 header nav .btn_wrap .btn01.taiken a{
