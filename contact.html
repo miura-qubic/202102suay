@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <title>お問い合わせ | </title>
+  <link rel="shortcut icon" href="./images/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./css/desktop.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" type="text/css" href="./css/tab.css"
+    media="screen and (min-width: 768px) and (max-width: 1025px)">
+  <link rel="stylesheet" type="text/css" href="./css/smart.css" media="screen and (max-width: 767px)">
+  <script defer src="./js/all.min.js"></script>
+  <!--[if lt IE 9]>
+	<script type="text/javascript" src="./js/selectivizr-min.js" defer></script>
+	<script type="text/javascript" src="./js/html5shiv.min.js" defer></script>
+	<![endif]-->
+</head>
+
+<body class="preload">
+  <div id="wrapper">
+    <header>
+      <!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ PCナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+      <!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ PCナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+
+      <!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ SPナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+      <!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ SPナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+
+      <div class="menu_open is_sp" id="menu_open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </header>
+    <main>
+
+      <!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 問い合わせ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+      <section class="contact01">
+
+        <div class="container">
+          <div class="box">
+              <form action="mail.php" method="post">
+                <h3><span>お問い合わせフォーム</span></h3>
+                <div class="item">
+                  <div class="inner"><label for="name">お名前 / 担当者名<span>必須</span></label></div>
+                  <div class="inner"><input name="name" type="text" id="name" required placeholder="お名前をご入力ください"></div>
+                </div>
+                <div class="item">
+                  <div class="inner"><label for="company">店舗名 / 会社名</label></div>
+                  <div class="inner"><input name="company" type="text" id="company" placeholder="企業様の場合はご入力お願い致します"></div>
+                </div>
+                <div class="item">
+                  <div class="inner"><label for="postcode">郵便番号</label></div>
+                  <div class="inner"><input name="postcode" type="tel" id="postcode" maxlength="8" placeholder="会社・店舗の所在地の郵便番号をご入力ください">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="inner"><label for="mail">メールアドレス<span>必須</span></label></div>
+                  <div class="inner"><input name="mail" type="email" id="mail" required placeholder="返信メールをお送りいたしますので、お間違えのないようお願いします">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="inner"><label for="tel">電話番号<span>必須</span></label></div>
+                  <div class="inner"><input name="tel" type="tel" id="tel" required placeholder="お電話番号をご入力ください"></div>
+                </div>
+                <div class="item">
+                  <div class="inner"><label for="msg">お問合せ内容<span>必須</span></label></div>
+                  <div class="inner"><textarea name="msg" id="msg" rows="5" required placeholder="ご質問・ご不明点・ご希望がございましたらご入力ください。"></textarea>
+                  </div>
+                </div>
+                <div class="submit"><input type="submit" value="無料相談に申し込む"></div>
+              
+              
+              </form>
+          </div>
+        </div>
+
+      </section>
+      <!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 問い合わせ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+
+
+    </main>
+    <footer>
+      <!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+      <!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+    </footer>
+  </div>
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js" defer></script>
+  <script src="./js/ofi.min.js" defer></script>
+  <script src="./js/picturefill.min.js" defer></script>
+  <script type="text/javascript" src="./js/myscript.js" defer></script>
+</body>
+
+</html>

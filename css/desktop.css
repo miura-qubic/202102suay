@@ -1,0 +1,216 @@
+
+/* @media screen and (min-width:1440px) {} */
+/* @media screen and (min-width:1280px) and ( max-width:1439px) {} */
+/* @media screen and (min-width:768px) and ( max-width:1279px) {} */
+/* @media screen and (min-width:1026px) and ( max-width:1279px) {} */
+/* @media screen and (min-width:768px) and ( max-width:1025px) {} */
+/*///////////////////////////////////////////////////
+//
+//            ▼ ベース設定 ▼
+//
+///////////////////////////////////////////////////*/
+@font-face {
+	font-family: "myfont";
+	src: url(../fonts/.woff) format("woff"),
+				url(../fonts/.otf) format("otf");
+}
+
+
+
+html{
+	color: #000;
+	font-size: 16px;
+	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+	/*font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;*/
+	line-height: 2;
+}
+a{
+	color:#000 ;
+	display: block;
+}
+#wrapper{
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	height: auto;
+}
+section,
+.section{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.l_container{
+	width: 95%;
+	margin: 0 auto;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.m_container{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1080px;
+}
+.s_container{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 960px;
+}
+@media screen and (min-width:1540px) {
+	.l_container{max-width: 1680px;}
+	.container{max-width: 1480px;}
+}
+@media screen and (min-width:1280px) and ( max-width:1539px) {
+	html{font-size: 15px;}
+	.container{max-width: 1280px;}
+}
+@media screen and (min-width:768px) and ( max-width:1279px) {
+	html{font-size: 14px;}
+	.container{max-width: none;}
+}
+.is_sp{display: none;}
+.is_tab{display: none;}
+@media screen and (min-width:751px) and ( max-width:1025px) {
+	html{font-size: 13px;}
+	.is_hidden_tab{display: none;}
+	.is_tab{display: block;}
+} 
+:root{
+	--insta_blue:#4C64D3;
+	--insta_red:#CF2E92;
+	--insta_orange:#F26939;
+	--insta_yellow:#FFDD83;
+	--facebook: #3C5A99;
+	--twitter: #1DA1F2;
+	--line: #00B900;
+	--youtube: #DA1725;
+}
+.objectCover {
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%; 
+	font-family: 'object-fit: cover;object-position: 50% 50%;'
+}
+.objectContain {
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: 50% 50%; 
+	font-family: 'object-fit: contain;object-position: 50% 50%;'
+}
+.point_reader{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.preload * { transition: none !important; }
+
+/*///////////////////////////////////////////////////
+//
+//            ▼ 共通 ▼
+//
+///////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////
+//
+//            ▼ ナビ ▼
+//
+///////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////
+//
+//            ▼ フッター ▼
+//
+///////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////
+//
+//            ▼ 下層共通 ▼
+//
+///////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////
+//
+//            ▼ IE対策 ▼
+//
+///////////////////////////////////////////////////*/
+@media all and (-ms-high-contrast: none) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////
+//
+//            ▼ プライバシーポリシー01 ▼
+//
+///////////////////////////////////////////////////*/
+.privacypolicy01 .box{
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.privacypolicy01 .box h1{
+	font-size: 2rem;
+	text-align: center;
+	margin: 0 0 2rem;
+}
+.privacypolicy01 .box h2{
+	font-size: 1.5rem;
+	margin: 3rem 0 1rem;
+}
+.privacypolicy01 .box ol{
+	margin: 1rem 0 1rem 2rem;
+}
+.privacypolicy01 .box ol li{
+	list-style: decimal;
+	margin: 0.5rem 0;
+}
+.privacypolicy01 .box ul{
+	margin: 1rem 0 1rem 2rem;
+}
+.privacypolicy01 .box ul li{
+	list-style: disc;
+}
+.privacypolicy01 .box ul li ol{
+	margin: 0rem 0 1.5rem 2rem;
+}
+.privacypolicy01 .box ul li ol li{
+	list-style: decimal;
+}
+.privacypolicy01 .box .right{
+	text-align: right;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ プライバシーポリシー01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
