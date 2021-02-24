@@ -18,10 +18,29 @@ const tabletwidth = 1025;
 
 $(function () {
 
+	// ヘッダー
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 500){
+			$('.header_in').addClass('active');
+		}else{
+			$('.header_in').removeClass('active');
+		}
+	});
+
 	var swiper01 = new Swiper('.top01 .swiper-container', {
 		loop: true,
+		speed: 40000,
+		slidesPerView: 1.4,
+		centeredSlides: true,
+		freeMode: true,
+		autoplay: {
+			delay: 1
+		}
+	});
+	var swiper02 = new Swiper('.top03 .swiper-container', {
+		loop: true,
 		speed: 8000,
-		slidesPerView: 9.3,
+		slidesPerView: 6.5,
 		centeredSlides: true,
 		freeMode: true,
 		autoplay: {
