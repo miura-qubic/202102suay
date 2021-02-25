@@ -263,6 +263,9 @@ a:hover .btn p span::after{
 .ttl_wrap.purple::before{
 	background: url(../images/common/ttl_fig_purple.png) center center / contain no-repeat;
 }
+.ttl_wrap.emegreen::before{
+	background: url(../images/common/ttl_fig_emegreen.png) center center / contain no-repeat;
+}
 .ttl_wrap .ttl{
 	font-size: 1.875rem;
 	font-family: 'Noto Serif JP', serif;
@@ -362,7 +365,8 @@ header .logo .txt .sub .txt02{
 	color: #040000;
 }
 
-header nav{
+header nav,
+body.top header .header_in.active nav{
 	width: 100%;
 	margin: auto 0 0 5.5rem;
 	display: flex;
@@ -1192,10 +1196,490 @@ footer .box03_in .r_item ul li a{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ パンくずリスト ▼
+//
+///////////////////////////////////////////////////*/
+.breadcrumb{
+	margin: 0;
+	list-style: none;
+	background: #fff;
+}
+.breadcrumb ol{
+	display: flex;
+	align-items: center;
+}
+.breadcrumb li{
+	font-size: 0.875rem;
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.breadcrumb li::after{
+	content: '>';
+	padding: 0 0.5em 0 1em;
+}
+.breadcrumb li:last-child::after{
+	content: '';
+}
+.breadcrumb li a{
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0;
+	color: #040000;
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 400;
+}
+.breadcrumb li a[href]{
+	transition: .3s;
+	text-decoration: underline;
+}
+.breadcrumb li a[href]:hover{
+	opacity: .6;
+}
+.breadcrumb li a .icon{
+	display: inline-block;
+	width: 1.25rem;
+	height: 1.1875rem;
+}
+.breadcrumb li a .icon img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ 下層共通 ▼
 //
 ///////////////////////////////////////////////////*/
+.lower_mv{
+	background: url(../images/common/lower_mv.jpg) center center / cover no-repeat;
+	padding: 4rem 0;
+}
+.lower_mv .lower_ttl{
+	color: #fff;
+	font-size: 2.25rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-shadow: 0 0 13px rgba(47,47,47,.69);
+}
+.lower_mv .lower_ttl span{
+	display: block;
+	font-size: 1.25rem;
+	font-family: "apple_chancery", serif;
+	letter-spacing: 0.3em;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial02 ▼
+//
+///////////////////////////////////////////////////*/
+.trial02{
+	background: url(../images/trial/trial02_bg.jpg) center center / cover no-repeat;
+	padding: 5rem 0;
+}
+.trial02 .copy{
+	margin-top: 3rem;
+	text-align: center;
+}
+.trial02 .copy p{
+	font-size: 0.875rem;
+	line-height: 2.35;
+}
+.trial02 .lesson_wrap{
+	background: #fff;
+	border: solid 1px #000;
+	border-radius: 6px;
+	padding: 2.5rem;
+	display: flex;
+	align-items: flex-start;
+}
+.trial02 .lesson_wrap{
+	margin-top: 4.5rem;
+}
+.lesson_wrap .l_item{
+	min-width: 14rem;
+	width: 24%;
+}
+.lesson_wrap .l_item .ttl{
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.lesson_wrap.emegreen .l_item .ttl{
+	color: var(--emegreen);
+}
+.lesson_wrap .l_item .ttl span{
+	display: block;
+	font-size: 0.75rem;
+	letter-spacing: 0.2em;
+}
+.lesson_wrap .l_item .minutes_wrap{
+	text-align: center;
+	overflow: hidden;
+}
+.lesson_wrap .l_item .minutes{
+	position: relative;
+	font-size: 1.25rem;
+	width: 3.25rem;
+	height: 3.25rem;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+}
+.lesson_wrap.emegreen .l_item .minutes{
+	background: var(--emegreen);
+}
+.lesson_wrap.green .l_item .minutes{
+	background: var(--green);
+}
+.lesson_wrap.orange .l_item .minutes{
+	background: var(--orange);
+}
+.lesson_wrap.pink .l_item .minutes{
+	background: var(--pink);
+}
+.lesson_wrap .l_item .minutes::before,
+.lesson_wrap .l_item .minutes::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 100%;
+	transform: translateY(-50%);
+	width: 300%;
+	border: dotted 1px #767676;
+}
+.lesson_wrap .l_item .minutes::before{
+	right: 100%;
+}
+.lesson_wrap .l_item .minutes::after{
+	left: 100%;
+}
+.lesson_wrap .l_item .minutes span{
+	font-size: 0.75rem;
+}
+.lesson_wrap .l_item .price{
+	margin-top: 0.75rem;
+	padding: 0 2rem;
+}
+.lesson_wrap .l_item .price p{
+	font-size: 2rem;
+}
+.lesson_wrap .l_item .price p span{
+	font-size: 1rem;
+	margin-right: 2rem;
+}
+.lesson_wrap .l_item .btn{
+	margin-top: 1rem;
+}
+.lesson_wrap .l_item .btn a{
+	width: 100%;
+}
+.lesson_wrap .txt{
+	width: 42%;
+	padding: 0 4%;
+}
+.lesson_wrap .txt p{
+	font-size: 0.875rem;
+	line-height: 1.65;
+}
+.lesson_wrap .img{
+	width: 33%;
+	overflow: hidden;
+	border-radius: 6px;
+}
+.lesson_wrap .img img{
+	width: 100%;
+	height: auto;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial03 ▼
+//
+///////////////////////////////////////////////////*/
+.trial03{
+	padding: 5rem 0 6rem;
+}
+.line{
+	width: 100%;
+	height: 1rem;
+	background: url(../images/trial/trial03_fig01.png) left top / cover no-repeat;
+}
+.trial03 .box{
+	margin-top: 3rem;
+}
+.trial03 .box_in{
+	margin-top: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.trial03 .box .item{
+	width: 29%;
+}
+.trial03 .box .item .line{
+	margin: 6rem 0;
+}
+.trial03 .box .txt h3{
+	font-size: 1.625rem;
+	font-weight: 500;
+	color: var(--emegreen);
+	line-height: 1.15;
+	margin-bottom: 1rem;
+}
+.trial03 .box .txt h3 span{
+	display: block;
+	font-size: 0.75rem;
+	letter-spacing: 0.2em;
+}
+.trial03 .box .item .txt p{
+	font-size: 0.875rem;
+	line-height: 1.65;
+}
+.trial03 .box .main_img{
+	width: 28%;
+}
+.trial03 .box .main_img img{
+	width: 100%;
+	height: auto;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial04 ▼
+//
+///////////////////////////////////////////////////*/
+.trial04{
+	background: #eaf8eb;
+	padding: 5rem 0 7rem;
+}
+.trial04 .box{
+	margin-top: 3rem;
+}
+.trial04 .box .item{
+	position: relative;
+	background: #fff;
+	padding: 3rem 2rem 3.5rem;
+	border-radius: 6px;
+	margin-top: 8rem;
+}
+.trial04 .box .item:first-of-type{
+	margin-top: 0;
+}
+.trial04 .box .item::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 70px 90px 0 90px;
+	border-color: #fff transparent transparent transparent;
+}
+.trial04 .box .item:last-of-type::after{
+	content: none;
+}
+.trial04 .box .item .step{
+	position: absolute;
+	top: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	font-size: 2.5rem;
+	line-height: 1;
+	letter-spacing: 0.2em;
+	color: var(--emegreen);
+}
+.trial04 .box .item h3{
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-align: center;
+	color: var(--emegreen);
+}
+.trial04 .box .item .copy{
+	margin: 1.5rem 0 2rem;
+}
+.trial04 .box .item .copy p{
+	text-align: center;
+}
+.trial04 .box .step01 .item_in{
+	margin: 2.5rem 0 0.5rem;
+	display: flex;
+	justify-content: flex-start;
+}
+.trial04 .box .step01 .item_in .inner{
+	width: 22%;
+	margin-right: 4%;
+}
+.trial04 .box .step01 .item_in .inner:last-of-type{
+	margin-right: 0;
+}
+.trial04 .box .step01 .item_in .inner a{
+	transition: .3s;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.trial04 .box .step01 .item_in .inner a:hover{
+	background: #f9f6f1;
+}
+.trial04 .box .step01 .item_in .inner a .img{
+	border-radius: 6px;
+	overflow: hidden;
+}
+.trial04 .box .step01 .item_in .inner a .img img{
+	width: 100%;
+	height: auto;
+	transition: .3s;
+}
+.trial04 .box .step01 .item_in .inner a:hover .img img{
+	transform: scale(1.05);
+}
+.trial04 .box .step01 .item_in .inner a .txt{
+	padding: 1.5rem 1rem 1.25rem;
+	text-align: center;
+}
+.trial04 .box .step01 .item_in .inner a .txt h4,
+.trial04 .box .step01 .item_in .inner a .txt .tel{
+	font-size: 1rem;
+	font-weight: 700;
+}
+.trial04 .box .step01 .item_in .inner a .txt .link{
+	font-weight: 500;
+	color: var(--emegreen);
+}
+.trial04 .box .step01 .item_in .inner a .txt .link span{
+	position: relative;
+}
+.trial04 .box .step01 .item_in .inner a .txt .link span::after{
+	position: absolute;
+	content: '>';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	margin-left: 0.3rem;
+}
+.trial04 .box .step01 .btn{
+	margin-top: 3rem;
+}
 
+.trial04 .box .step02 .item_in{
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.trial04 .box .step02 .item_in .txt{
+	width: 44%;
+}
+.trial04 .box .step02 .item_in .txt_in{
+	border-bottom: dashed 1px #000;
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+}
+.trial04 .box .step02 .item_in .txt_in:last-of-type{
+	padding-bottom: 4rem;
+	margin-bottom: 0;
+}
+.trial04 .box .step02 .item_in .txt dl{
+	display: flex;
+}
+.trial04 .box .step02 .item_in .txt dt,
+.trial04 .box .step02 .item_in .txt dd{
+	padding: 0 2rem;
+}
+.trial04 .box .step02 .item_in .txt dt{
+	width: 40%;
+}
+.trial04 .box .step02 .item_in .txt dd{
+	font-size: 0.875rem;
+	width: 60%;
+}
+.trial04 .box .step02 .item_in .txt dd ul{
+	margin-left: 1rem;
+}
+.trial04 .box .step02 .item_in .txt dd ul li{
+	list-style-type: disc;
+}
+.trial04 .box .step02 .item_in .img{
+	width: 48%;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.trial04 .box .step03 .item_in{
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.trial04 .box .step03 .item_in .img{
+	width: 48%;
+	border-radius: 6px;
+	overflow: hidden;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial05 ▼
+//
+///////////////////////////////////////////////////*/
+.trial05{
+	padding: 5rem 0 6rem;
+}
+.trial05 .box01{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.trial05 .box01 .txt{
+	width: 44%;
+}
+.trial05 .box01 .txt h3{
+	font-size: 1.875rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.trial05 .box01 .txt p{
+	font-size: 0.875rem;
+	line-height: 2.15;
+}
+.trial05 .box01 .img_wrap{
+	position: relative;
+	width: 48%;
+}
+.trial05 .box01 .img_wrap .img{
+	position: relative;
+	z-index: 2;
+}
+.trial05 .box01 .img_wrap .fig{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) translateY(1rem);
+	width: 100%;
+	height: auto;
+}
+
+.trial05 .box02{
+	border: solid 10px #eaf8eb;
+	border-radius: 6px;
+	padding: 2.5rem;
+	margin-top: 7rem;
+}
+.trial05 .box02 .img{
+	border-radius: 6px;
+	overflow: hidden;
+}
+.trial05 .box02 .img img{
+	width: 100%;
+	height: auto;
+}
+.trial05 .box .txt01 p{
+	color: var(--emegreen);
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ IE対策 ▼
