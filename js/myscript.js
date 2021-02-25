@@ -27,6 +27,11 @@ $(function () {
 		}
 	});
 
+	// アニメーション発動
+	$('.fadein').on('inview',function(){
+		$(this).addClass('active');
+	});
+
 	var swiper01 = new Swiper('.top01 .swiper-container', {
 		loop: true,
 		speed: 40000,
