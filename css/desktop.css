@@ -589,6 +589,10 @@ footer .box03_in .r_item ul li:last-of-type{
 }
 footer .box03_in .r_item ul li a{
 	color: #fff;
+	transition: .3s;
+}
+footer .box03_in .r_item ul li a:hover{
+	opacity: .6;
 }
 /*///////////////////////////////////////////////////
 //
@@ -1776,6 +1780,218 @@ footer .box03_in .r_item ul li a{
 .trial05 .box02 .txt02 p{
 	font-size: 0.875rem;
 	line-height: 2.15;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ instructors_schools02 ▼
+//
+///////////////////////////////////////////////////*/
+.instructors_schools02{
+	padding: 5rem 0 4rem;
+}
+.instructors_schools02 .box{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.instructors_schools02 .box .item{
+	width: 48%;
+	border: solid 1px #000;
+	border-radius: 6px;
+	padding: 1rem 1.5rem 2.5rem;
+	margin-top: 3rem;
+}
+.instructors_schools02 .box .item .profile{
+	display: flex;
+	align-items: center;
+}
+.instructors_schools02 .box .item .profile .img{
+	width: 9rem;
+	height: 9rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.instructors_schools02 .box .item .profile .img img{
+	width: 100%;
+	height: auto;
+}
+.instructors_schools02 .box .item .profile .txt{
+	width: calc(100% - 9rem);
+	padding-left: 2rem;
+}
+.instructors_schools02 .box .item .profile .txt h2{
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+.instructors_schools02 .box .item .profile .txt ul li{
+	font-size: 0.875rem;
+	line-height: 1.65;
+}
+.instructors_schools02 .box .item .msg{
+	margin-top: 2rem;
+}
+.instructors_schools02 .box .item .msg p{
+	font-size: 0.875rem;
+	line-height: 1.65;
+}
+.instructors_schools02 .box .item .school_wrap{
+	margin-top: 2rem;
+}
+.instructors_schools02 .box .item .school_wrap h3{
+	font-size: 1rem;
+	font-weight: 700;
+	border-bottom: solid 1px #000;
+	padding-bottom: 0.3rem;
+	margin-bottom: 1rem;
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap{
+	display: flex;
+	align-items: center;
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap li{
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 1;
+	width: 6.25rem;
+	padding: 0.75rem 0.5rem;
+	margin-right: 0.5rem;
+	border-radius: 1.5rem;
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap li:last-of-type{
+	margin-right: 0;
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap li.emegreen{
+	color: var(--emegreen);
+	border: solid 1px var(--emegreen);
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap li.green{
+	color: var(--green);
+	border: solid 1px var(--green);
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap li.orange{
+	color: var(--orange);
+	border: solid 1px var(--orange);
+}
+.instructors_schools02 .box .item .school_wrap .lesson_wrap li.pink{
+	color: var(--pink);
+	border: solid 1px var(--pink);
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap{
+	margin-top: 1rem;
+	display: flex;
+	align-items: flex-start;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dl{
+	width: 52%;
+	padding-right: 1rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt,
+.instructors_schools02 .box .item .school_wrap .access_wrap dd{
+	font-size: 0.75rem;
+	line-height: 1.5;
+	margin-left: 1.25rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt{
+	position: relative;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: -1.25rem;
+	transform: translateY(-50%);
+	width: 0.8125rem;
+	height: 1.1875rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt.address::before{
+	background: url(../images/instructors_schools/instructors_schools01_icon01.png) center center / contain no-repeat;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt.tel::before{
+	background: url(../images/instructors_schools/instructors_schools01_icon02.png) center center / contain no-repeat;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt.access::before{
+	background: url(../images/instructors_schools/instructors_schools01_icon03.png) center center / contain no-repeat;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dd{
+	margin-bottom: 1rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dd:last-of-type{
+	margin-bottom: 0;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap .img{
+	width: 48%;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.instructors_schools02 .box .item .btn{
+	margin-top: 2.25rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ instructors_schools03 ▼
+//
+///////////////////////////////////////////////////*/
+.instructors_schools03{
+	padding: 3rem 0 8rem;
+}
+.instructors_schools03 h2{
+	position: relative;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+	overflow: hidden;
+}
+.instructors_schools03 h2::before,
+.instructors_schools03 h2::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	width: 50%;
+	height: 1rem;
+	background: url(../images/trial/trial03_fig01.png) left top / cover no-repeat;
+}
+.instructors_schools03 h2::before{
+	left: 50%;
+	transform: translate(-50%,-50%) translateX(-75%);
+}
+.instructors_schools03 h2::after{
+	left: 50%;
+	transform: translate(-50%,-50%) translateX(75%);
+}
+.instructors_schools03 .box_in{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-top: 4rem;
+}
+.instructors_schools03 .box_in .item{
+	width: 17.5%;
+	margin: 3rem 3.125% 0 0;
+}
+.instructors_schools03 .box_in .item:nth-of-type(5n){
+	margin-right: 0;
+}
+.instructors_schools03 .box_in .item:nth-of-type(-n+5){
+	margin-top: 0;
+}
+.instructors_schools03 .box_in .item .img{
+	border-radius: 6px;
+	overflow: hidden;
+}
+.instructors_schools03 .box_in .item .img img{
+	width: 100%;
+	height: auto;
+}
+.instructors_schools03 .box_in .item .txt{
+	margin-top: 0.75rem;
+}
+.instructors_schools03 .box_in .item .txt h3{
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+.instructors_schools03 .box_in .item .txt p{
+	font-size: 0.875rem;
+	line-height: 1.65;
 }
 /*///////////////////////////////////////////////////
 //
