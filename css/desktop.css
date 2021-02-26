@@ -1677,8 +1677,105 @@ footer .box03_in .r_item ul li a{
 	width: 100%;
 	height: auto;
 }
-.trial05 .box .txt01 p{
+.trial05 .box02 .txt01 p,
+.trial05 .box02 .txt01 h3{
+	font-size: 3.75rem;
+	font-weight: 400;
 	color: var(--emegreen);
+	text-align: center;
+}
+.trial05 .box02 .txt01 p span{
+	font-size: 2.25rem;
+}
+.trial05 .box02 .copy{
+	text-align: center;
+	margin: 3rem 0;
+}
+.trial05 .box02 .copy p{
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--emegreen);
+}
+.trial05 .box02 .item{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 0.5rem;
+}
+.trial05 .box02 .item .inner{
+	width: 22%;
+	margin-right: 4%;
+}
+.trial05 .box02 .item .inner:last-of-type{
+	margin-right: 0;
+}
+.trial05 .box02 .item .inner a{
+	transition: .3s;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.trial05 .box02 .item .inner a:hover{
+	background: #f9f6f1;
+}
+.trial05 .box02 .item .inner a .img{
+	border-radius: 6px;
+	overflow: hidden;
+}
+.trial05 .box02 .item .inner a .img img{
+	width: 100%;
+	height: auto;
+	transition: .3s;
+}
+.trial05 .box02 .item .inner a:hover .img img{
+	transform: scale(1.05);
+}
+.trial05 .box02 .item .inner a .txt{
+	padding: 1.5rem 1rem 1.25rem;
+	text-align: center;
+}
+.trial05 .box02 .item .inner a .txt h4,
+.trial05 .box02 .item .inner a .txt .tel{
+	font-size: 1rem;
+	font-weight: 700;
+}
+.trial05 .box02 .item .inner a .txt .link{
+	font-weight: 500;
+	color: var(--emegreen);
+}
+.trial05 .box02 .item .inner a .txt .link span{
+	position: relative;
+}
+.trial05 .box02 .item .inner a .txt .link span::after{
+	position: absolute;
+	content: '>';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	margin-left: 0.3rem;
+}
+.trial05 .box02 .btn{
+	margin: 3rem 0 2rem;
+}
+.trial05 .box02 .btn a{
+	width: 33.125rem;
+	border-radius: 10px;
+	padding: 1.25rem 0;
+}
+.trial05 .box02 .btn a span::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 100%;
+	transform: translateY(-50%) translateX(-1.5rem);
+	width: 1.75rem;
+	height: 2.875rem;
+	background: url(../images/common/taiken_icon_large.png) center center / contain no-repeat;
+}
+.trial05 .box02 .txt02{
+	text-align: center;
+}
+.trial05 .box02 .txt02 p{
+	font-size: 0.875rem;
+	line-height: 2.15;
 }
 /*///////////////////////////////////////////////////
 //
