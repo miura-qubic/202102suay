@@ -34,8 +34,8 @@ $(function () {
 
 	var swiper01 = new Swiper('.top01 .swiper-container', {
 		loop: true,
-		speed: 40000,
-		slidesPerView: 1.4,
+		speed: 10000,
+		slidesPerView: 9,
 		centeredSlides: true,
 		freeMode: true,
 		simulateTouch: false,
