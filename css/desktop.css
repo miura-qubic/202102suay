@@ -143,8 +143,11 @@ main{
 	text-align: center;
 	color: #fff;
 	background: var(--green);
-	padding: 0.5rem 0;
 	width: 18.75rem;
+	height: 3.125rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: solid 1px var(--green);
 	border-radius: 2rem;
 	margin: 0 auto;
@@ -2283,6 +2286,79 @@ footer .box03_in .r_item ul li a:hover{
 	background: #f9f6f1;
 	padding: 5rem 0 6rem;
 }
+.school05 .box{
+	margin-top: 3rem;
+}
+.school05 .box .copy{
+	text-align: center;
+}
+.school05 .box .copy p{
+	font-weight: 700;
+	line-height: 1.62;
+}
+.school05 .box .copy p.notes{
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+.school05 .box .btn_wrap{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 2.5rem 0 3rem;
+}
+.school05 .box .btn_wrap .l_btn{
+	margin-right: 3rem;
+}
+.school05 .box .btn_wrap .btn a{
+	width: 22.5rem;
+}
+.school05 .box .btn_wrap .r_btn .btn.white a{
+	font-size: 1.625rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	box-shadow: 0 2px 8px rgba(47,47,47,.2);
+}
+.school05 .box .btn_wrap .r_btn .btn.white a span{
+	display: inline-block;
+	padding-left: 1.5rem;
+}
+.school05 .box .btn_wrap .r_btn .btn.white a span::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 19px;
+	background: url(../images/common/reservation_icon.png) center center / contain no-repeat;
+	transition: .3s;
+}
+.school05 .box .btn_wrap .r_btn .btn.white a:hover span::before{
+	background: url(../images/common/reservation_icon_w.png) center center / contain no-repeat;
+}
+.school05 .box .btn_wrap .r_btn .btn.white a span::after{
+	content: none;
+}
+.school05 .box .btn_wrap .l_btn p,
+.school05 .box .btn_wrap .r_btn p{
+	font-size: 0.75rem;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.school05 .box .g_cal{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+}
+.school05 .box .g_cal iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ school06 ▼
@@ -2290,6 +2366,112 @@ footer .box03_in .r_item ul li a:hover{
 ///////////////////////////////////////////////////*/
 .school06{
 	padding: 5rem 0 6rem;
+}
+.school06 .box{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+.school06 .box .l_item{
+	width: 40%;
+	padding-right: 4%;
+}
+.school06 .box .l_item h3{
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+}
+.school06 .box .l_item table{
+	width: 100%;
+}
+.school06 .box .l_item table tr{
+	border-top: solid 1px #000;
+}
+.school06 .box .l_item table tr:last-of-type{
+	border-bottom: solid 1px #000;
+}
+.school06 .box .l_item table tr td{
+	padding: 1rem 0 1rem 1.25rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+}
+.school06 .box .l_item table tr td span{
+	position: relative;
+}
+.school06 .box .l_item table tr td.tel p span{
+	font-size: 1rem;
+}
+.school06 .box .l_item table tr td.tel p + p{
+	margin-top: 1rem;
+}
+.school06 .box .l_item table tr td.tel .notes{
+	margin-left: -1.25rem;
+	font-size: 0.75rem;
+	line-height: 1.565;
+}
+.school06 .box .l_item table tr td span::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: -1.25rem;
+	transform: translateY(-50%);
+	width: 0.8125rem;
+	height: 1.1875rem;
+}
+.school06 .box .l_item table tr td.address span::before{
+	background: url(../images/instructors_schools/instructors_schools02_icon01.png) center center / contain no-repeat;
+}
+.school06 .box .l_item table tr td.access span::before{
+	background: url(../images/instructors_schools/instructors_schools02_icon03.png) center center / contain no-repeat;
+}
+.school06 .box .l_item table tr td.tel span::before{
+	background: url(../images/instructors_schools/instructors_schools02_icon02.png) center center / contain no-repeat;
+}
+.school06 .box .l_item .sns_wrap{
+	display: flex;
+	align-items: center;
+	margin-top: 1.5rem;
+	padding: 0 0.5rem;
+}
+.school06 .box .l_item .sns_wrap a{
+	margin-right: 3rem;
+	line-height: 1;
+}
+.school06 .box .l_item .sns_wrap a span{
+	font-size: 1.625rem;
+	line-height: 1;
+	transition: .3s;
+}
+.school06 .box .l_item .sns_wrap a.instagram .svg_instagram{
+	display: inline-block;
+	width: 1.625rem;
+	height: 1.625rem;
+}
+.school06 .box .l_item .sns_wrap a.instagram .svg_instagram .instagram_path{
+	fill: #000;
+	transition: .3s;
+}
+.school06 .box .l_item .sns_wrap a:hover span{
+	color: var(--green);
+}
+.school06 .box .l_item .sns_wrap a.instagram:hover .svg_instagram .instagram_path{
+	fill: var(--green);
+}
+.school06 .box .r_item{
+	width: 60%;
+}
+.school06 .box .gmap{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 75%;
+}
+.school06 .box .gmap iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 /*///////////////////////////////////////////////////
 //
