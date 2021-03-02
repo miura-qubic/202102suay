@@ -133,6 +133,7 @@ main{
 }
 .apple_chancery{
 	font-family: "apple_chancery", serif;
+	font-weight: normal;
 }
 .btn a,
 .btn p{
@@ -1291,18 +1292,6 @@ footer .box03_in .r_item ul li a:hover{
 //            ▼ lesson共通 ▼
 //
 ///////////////////////////////////////////////////*/
-.lesson_common{
-	background: url(../images/trial/trial02_bg.jpg) center center / cover no-repeat;
-	padding: 5rem 0;
-}
-.lesson_common .copy{
-	margin-top: 3rem;
-	text-align: center;
-}
-.lesson_common .copy p{
-	font-size: 0.875rem;
-	line-height: 2.35;
-}
 .lesson_wrap{
 	background: #fff;
 	border: solid 1px #000;
@@ -2493,6 +2482,168 @@ footer .box03_in .r_item ul li a:hover{
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ lesson_common02 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common02{
+	background: url(../images/trial/trial02_bg.jpg) center center / cover no-repeat;
+	padding: 5rem 0;
+}
+.lesson_common02 .copy{
+	margin-top: 3rem;
+	text-align: center;
+}
+.lesson_common02 .copy p{
+	font-size: 0.875rem;
+	line-height: 2.35;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ lesson_common03 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common03{
+	padding: 5rem 0 6rem;
+}
+.lesson_common03 .box{
+	max-width: 980px;
+	width: 100%;
+	margin: 3rem auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lesson_common03 .box .img{
+	width: 50%;
+}
+.lesson_common03 .box .img img{
+	width: 100%;
+	height: auto;
+}
+.lesson_common03 .box .txt{
+	width: 50%;
+	padding-left: 5%;
+}
+.lesson_common03 .box .txt ul li{
+	position: relative;
+	font-weight: 500;
+	line-height: 3;
+}
+.lesson_common03 .box .txt ul li::before{
+	content: '□';
+	margin-right: 1rem;
+}
+.lesson_common03 .box .txt ul li::after{
+	position: absolute;
+	content: '';
+	top: -0.4rem;
+	left: -0.25rem;
+	background: url(../images/common/check.png) center center / contain no-repeat;
+	width: 1.875rem;
+	height: 2.0625rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ basic_lesson04 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common04{
+	background: #eaf8eb;
+	padding: 5rem 0 9rem;
+}
+.lesson_common04 .box{
+	margin-top: 3rem;
+}
+.lesson_common04 .box .copy{
+	text-align: center;
+}
+.lesson_common04 .box .copy p{
+	font-size: 0.875rem;
+	line-height: 2.35;
+}
+.lesson_common04 .box_in{
+	margin-top: 4rem;
+}
+.lesson_common04 .box_in .item{
+	display: flex;
+	margin-top: 5rem;
+}
+.lesson_common04 .box_in .item:first-of-type{
+	margin-top: 0;
+}
+.lesson_common04 .box_in .item .img{
+	border-radius: 6px;
+	overflow: hidden;
+	width: 50%;
+}
+.lesson_common04 .box_in .item .txt{
+	position: relative;
+	width: 50%;
+	margin: 3rem 1.5rem -3rem -1.5rem;
+	z-index: 2;
+}
+.lesson_common04 .box_in .item .txt a{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 6px;
+	transition: .3s;
+}
+.lesson_common04 .box_in .item .txt a:hover{
+	background: #f9f6f1;
+}
+.lesson_common04 .box_in .item .txt a h3{
+	font-size: 3.125rem;
+	letter-spacing: 0.3em;
+	margin-bottom: 0.25rem;
+}
+.lesson_common04 .box_in .item .txt a h4{
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.lesson_common04 .box_in .item .txt a p{
+	font-size: 0.875rem;
+	line-height: 1.7;
+}
+.lesson_common04 .box_in .item .txt a .link_txt{
+	margin-top: 2.5rem;
+}
+.lesson_common04 .box_in .item .txt a .link_txt p{
+	font-size: 1rem;
+	font-weight: 700;
+	color: #2e9648;
+}
+.lesson_common04 .box_in .item .txt a .link_txt p span{
+	position: relative;
+}
+.lesson_common04 .box_in .item .txt a .link_txt p span::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%) translateX(1rem);
+	background: url(../images/common/link_fig01.png) center center / contain no-repeat;
+	width: 4.4375rem;
+	height: 0.5625rem;
+	transition: .3s;
+}
+.lesson_common04 .box_in .item .txt a:hover .link_txt p span::after{
+	transform: translateY(-50%) translateX(1.5rem);
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ lesson_common05 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common05{
+	padding: 5rem 0;
+}
+.lesson_common05 .lesson_wrap{
+	margin-top: 0;
 }
 /*///////////////////////////////////////////////////
 //
