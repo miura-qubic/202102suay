@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<!-- トップページの場合 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"> -->
+	<!-- 記事の場合 <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#"> -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<title>サルセーション | SUAY YOGA-school</title>
+
+	<!-- ファビコン -->
+	<link rel="shortcut icon" href="./images/favicon.ico" />
+	<link rel="apple-touch-icon" href="./images/favicon.ico" />
+	<!-- ファビコン -->
+
+	<!-- OGP設定 -->
+	<!-- <meta property="og:url" content="ページの URL" /> -->
+	<!-- TOPページの場合は「website」、WEBサイト上の記事ページなど、TOPページ以外には「article」 -->
+	<!-- <meta property="og:type" content="ページの種類" />  -->
+	<!-- <meta property="og:title" content="ページの タイトル" /> -->
+	<!-- <meta property="og:description" content="ページのディスクリプション" /> -->
+	<!-- <meta property="og:site_name" content="サイト名" /> -->
+	<!-- <meta property="og:image" content="サムネイル画像の URL" /> -->
+	<!-- FacebookのOGP設定 -->
+	<!-- <meta property="fb:app_id" content="FacebookアプリID">  -->
+	<!-- Summary・summary_large_image -->
+	<!-- <meta name="twitter:card" content="カードの種類" />  -->
+	<!-- <meta name="twitter:site" content="@ユーザー名" /> -->
+	<!-- OGP設定 -->
+
+	<!-- Googleフォント読み込み -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- Googleフォント読み込み -->
+
+	<!-- CSS読み込み -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./css/desktop.css" media="screen and (min-width: 768px)">
+	<link rel="stylesheet" type="text/css" href="./css/tab.css"
+		media="screen and (min-width: 768px) and (max-width: 1025px)">
+	<link rel="stylesheet" type="text/css" href="./css/smart.css" media="screen and (max-width: 767px)">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+	<!-- CSS読み込み -->
+
+	<!-- JS読み込み -->
+	<script defer src="./js/all.min.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js" defer></script>
+	<!-- JS読み込み -->
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="./js/selectivizr-min.js" defer></script>
+	<script type="text/javascript" src="./js/html5shiv.min.js" defer></script>
+	<![endif]-->
+</head>
+
+<body class="preload">
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<div class="header_in">
+					<div class="logo">
+						<a href="./"><img src="./images/common/logo.png" alt="SUAY"></a>
+						<div class="txt">
+							<div class="sitename">SUAY</div>
+							<div class="sub">
+								<p class="txt01">YOGA-school</p>
+								<p class="txt02 notoserif">SUAYヨガ・ルーシーダットン</p>
+							</div>
+						</div>
+					</div>
+
+					<nav>
+						<div class="btn_wrap">
+							<div class="btn01 taiken">
+								<a href="#"><span>体験教室</span></a>
+							</div>
+							<div class="btn01 reservation">
+								<a href="#"><span>Web予約・お問い合わせ</span></a>
+							</div>
+						</div>
+
+						<ul>
+							<li><a href="#">KIYOメソッド</a></li>
+							<li><a href="#">基本レッスンコース</a></li>
+							<li><a href="#">単発レッスン</a></li>
+							<li><a href="#">インストラクター養成</a></li>
+							<li><a href="#">インストラクター・教室一覧</a></li>
+						</ul>
+					</nav>
+				
+					<div class="menu_open is_sp" id="menu_open">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<main>
+
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ パンくずリスト ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<div class="breadcrumb fadein fade01">
+				<div class="container">
+					<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope
+								itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="./">
+								<span itemprop="name" class="icon"><img src="./images/common/home_icon.png" alt="ホーム"></span>
+							</a>
+							<meta itemprop="position" content="1" />
+						</li>
+					
+						<li itemprop="itemListElement" itemscope
+								itemtype="https://schema.org/ListItem">
+							<a itemprop="item">
+								<span itemprop="name">ヨガ体験</span>
+							</a>
+							<meta itemprop="position" content="2" />
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ パンくずリスト ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層MV共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="lower_mv salsation01">
+				<div class="container">
+					<h1 class="lower_ttl">
+						<span>-SalSation exercise-</span>
+						サルセーション
+					</h1>
+				</div>
+			</section>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層MV共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ salsation02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="salsation02 lesson_common02">
+				<div class="container fadein fade01">
+					<div class="ttl_wrap pink">
+						<h2 class="ttl">“サルセーションについて”</h2>
+						<p class="en">-SalSation exercise-</p>
+					</div>
+					<div class="copy">
+						<p>
+							参考）程よく気持ちよく汗をかけるプログラムです。<br>
+							デトックス・美肌効果・体温UPに効果的で、女性本来の美しさを磨くことができます。<br>
+							参考）程よく気持ちよく汗をかけるプログラムです。<br>
+							デトックス・美肌効果・体温UPに効果的で、女性本来の美しさを磨くことができます。
+						</p>
+					</div>
+
+
+					<div class="lesson_wrap pink fadein fade01">
+						<div class="l_item">
+							<h3 class="ttl">
+								<span class="en apple_chancery">SalSation exercise</span>
+								［ サルセーション ］
+								<span class="sub_ttl">- ダンスエクササイズ -</span>
+							</h3>
+							<div class="minutes_wrap">
+								<div class="minutes">
+									<p>60<span>分</span></p>
+								</div>
+							</div>
+							<div class="price">
+								<p><span>料金</span>1,000円</p>
+							</div>
+							<div class="btn pink">
+								<a href="./salsation.html"><span>ご予約はこちら</span></a>
+							</div>
+						</div>
+						<div class="txt">
+							<p>1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。</p>
+						</div>
+						<div class="img">
+							<img src="./images/school/school04_img04.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ salsation02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ salsation03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="salsation03 lesson_common03">
+				<div class="container fadein fade01">
+					<div class="ttl_wrap pink">
+						<h2 class="ttl">“この様な方におすすめです”</h2>
+						<p class="en">-Recommended-</p>
+					</div>
+
+					<div class="box">
+						<div class="img">
+							<img src="./images/salsation/salsation03_img01.png">
+						</div>
+						<div class="txt">
+							<ul class="notoserif">
+								<li>疾患予防や不調改善のためにヨガを習得したい方</li>
+								<li>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</li>
+								<li>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</li>
+								<li>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ salsation03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+			
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ salsation04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="salsation04 lesson_common04">
+				<div class="container">
+					<div class="ttl_wrap pink fadein fade01">
+						<h2 class="ttl">“レッスン内容”</h2>
+						<p class="en">-lesson-</p>
+					</div>
+
+					<div class="box">
+						<div class="copy fadein fade01">
+							<p>
+								仮）サルセーションとは「感じる」という意味で、音楽のジャンルにとらわれず、<br>
+								サルサソースのようにダンススタイルがミックスされており、自然に体を動かしたくなるような曲が選ばれているダンスプログラムです。 
+							</p>
+						</div>
+
+						<div class="box_in">
+							<div class="item fadein fade01">
+								<div class="img">
+									<img src="./images/salsation/salsation04_img01.png" alt="バランスを整えるヨガポージング">
+								</div>
+								<div class="txt">
+									<a href="#">
+										<h3 class="apple_chancery">Posing</h3>
+										<h4>バランスを整えるヨガポージング</h4>
+										<p>見出しに合わせた説明）基本的なヨガのポージングを体得して、心と体のバランスを整えます。見出しに合わせた説明）基本的なヨガのポージングを体得して、心と体のバランスを整えます。見出しに合わせた説明）基本的なヨガのポージングを体得して、心と体のバランスを整えます。</p>
+									</a>
+								</div>
+							</div>
+
+							<div class="item fadein fade01">
+								<div class="img">
+									<img src="./images/salsation/salsation04_img02.png" alt="バランスを整えるヨガの呼吸法">
+								</div>
+								<div class="txt">
+									<a href="#">
+										<h3 class="apple_chancery">Breathing</h3>
+										<h4>バランスを整えるヨガの呼吸法</h4>
+										<p>見出しに合わせた説明）〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+									</a>
+								</div>
+							</div>
+
+							<div class="item fadein fade01">
+								<div class="img">
+									<img src="./images/salsation/salsation04_img03.png" alt="">
+								</div>
+								<div class="txt">
+									<a href="#">
+										<h3 class="apple_chancery">Aaaaaaaaaa</h3>
+										<h4>〇〇〇〇〇〇〇〇〇〇〇〇〇〇</h4>
+										<p>見出しに合わせた説明）〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+									</a>
+								</div>
+							</div>
+
+							<div class="item fadein fade01">
+								<div class="img">
+									<img src="./images/salsation/salsation04_img04.png" alt="">
+								</div>
+								<div class="txt">
+									<a href="#">
+										<h3 class="apple_chancery">Aaaaaaaaaa</h3>
+										<h4>〇〇〇〇〇〇〇〇〇〇〇〇〇〇</h4>
+										<p>見出しに合わせた説明）〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lesson02_04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+			
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lesson02_05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="lesson02_05 lesson_common05">
+				<div class="container">
+					<div class="lesson_wrap pink fadein fade01">
+						<div class="l_item">
+							<h3 class="ttl">
+								<span class="en apple_chancery">SalSation exercise</span>
+								［ サルセーション ］
+								<span class="sub_ttl">- ダンスエクササイズ -</span>
+							</h3>
+							<div class="minutes_wrap">
+								<div class="minutes">
+									<p>60<span>分</span></p>
+								</div>
+							</div>
+							<div class="price">
+								<p><span>料金</span>1,000円</p>
+							</div>
+							<div class="btn pink">
+								<a href="./salsation.html"><span>ご予約はこちら</span></a>
+							</div>
+						</div>
+						<div class="txt">
+							<p>1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。1セッション00分の◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯こんなことをする初回体験レッスンです。</p>
+						</div>
+						<div class="img">
+							<img src="./images/school/school04_img04.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lesson02_05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+			
+		</main>
+		<footer class="fadein fade01">
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<div class="box01">
+				<div class="container">
+					<div class="box01_in">
+						<div class="item">
+							<a href="#">
+								<div class="img">
+									<img src="./images/common/footer_bnr01.jpg" alt="スアイ 指導者養成コース ヨガと生きるひとになる">
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="img">
+									<img src="./images/common/footer_bnr02.jpg" alt="SUAY.LABO -Enjoy yoga life-">
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="img">
+									<img src="./images/common/footer_bnr03.jpg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="img">
+									<img src="./images/common/footer_bnr04.jpg" alt="ジャンルを超えてリズムと運動を楽しむ SALSATION サルセーションレッスン">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box02">
+				<div class="container">
+					<nav class="footer_menu">
+						<div class="menu">
+							<ul>
+								<li><a href="#"><span>体験レッスンについて</span></a></li>
+								<li><a href="#"><span>よくあるご質問</span></a></li>
+								<li><a href="#"><span>ご予約</span></a></li>
+							</ul>
+						</div>
+
+						<div class="menu">
+							<h3>レッスン一覧</h3>
+							<ul>
+								<li><a href="#"><span>体験レッスンについて</span></a></li>
+								<li><a href="#"><span>基本レッスンコース</span></a></li>
+								<li><a href="#"><span>〇〇〇〇〇〇〇〇</span></a></li>
+								<li><a href="#"><span>サルセーション</span></a></li>
+								<li><a href="#"><span>指導者コース</span></a></li>
+							</ul>
+						</div>
+
+						<div class="menu">
+							<h3>教室案内</h3>
+							<ul>
+								<li><a href="#"><span>教室一覧</span></a></li>
+								<li><a href="#"><span>奈良・生駒</span></a></li>
+								<li><a href="#"><span>〇〇・〇〇</span></a></li>
+								<li><a href="#"><span>〇〇・〇〇</span></a></li>
+								<li><a href="#"><span>〇〇・〇〇</span></a></li>
+							</ul>
+						</div>
+
+						<div class="menu">
+							<h3>インストラクター養成</h3>
+							<ul>
+								<li><a href="#"><span>インストラクター養成について</span></a></li>
+							</ul>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+
+			<div class="box03">
+				<div class="container">
+					<div class="box03_in">
+						<div class="f_logo">
+							<div class="img">
+								<img src="./images/common/footer_logo.png" alt="SUAY">
+							</div>
+							<div class="txt">
+								<p class="sitename">SUAY</p>
+								<p class="txt01">YOGA-school</p>
+								<p class="txt02 notoserif">SUAYヨガ・ルーシーダットン</p>
+							</div>
+						</div>
+
+						<div class="r_item hiragino">
+							<ul>
+								<li><a href="#">会社概要</a></li>
+								<li><a href="#">プライバシーポリシー</a></li>
+							</ul>
+							<p class="copyright">Copyright (C) 2021 SUAY inc All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+		</footer>
+	</div>
+
+	<!-- JS読み込み -->
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js" defer></script>
+	<script type="text/javascript" src="./js/jquery.inview.min.js" defer></script>
+	<script src="./js/ofi.min.js"></script> <!-- defer つけるとコンソールエラー出る -->
+	<script src="./js/picturefill.min.js" defer></script>
+	<script type="text/javascript" src="./js/myscript.js" defer></script>
+	<script> objectFitImages(); </script> <!-- defer つけるとコンソールエラー出る -->
+	<!-- JS読み込み -->
+
+</body>
+
+</html>
