@@ -273,6 +273,12 @@ a:hover .btn p span::after{
 .ttl_wrap.green::before{
 	background: url(../images/common/ttl_fig_green.png) center center / contain no-repeat;
 }
+.ttl_wrap.orange::before{
+	background: url(../images/common/ttl_fig_orange.png) center center / contain no-repeat;
+}
+.ttl_wrap.pink::before{
+	background: url(../images/common/ttl_fig_pink.png) center center / contain no-repeat;
+}
 .ttl_wrap .ttl{
 	font-size: 1.875rem;
 	font-family: 'Noto Serif JP', serif;
@@ -1851,6 +1857,7 @@ footer .box03_in .r_item ul li a:hover{
 }
 .trial05 .box02 .btn a{
 	width: 33.125rem;
+	height: 5rem;
 	border-radius: 10px;
 	padding: 1.25rem 0;
 }
@@ -2525,7 +2532,7 @@ footer .box03_in .r_item ul li a:hover{
 }
 .lesson_common03 .box .txt{
 	width: 50%;
-	padding-left: 5%;
+	padding-left: 6%;
 }
 .lesson_common03 .box .txt ul li{
 	position: relative;
@@ -2551,8 +2558,13 @@ footer .box03_in .r_item ul li a:hover{
 //
 ///////////////////////////////////////////////////*/
 .lesson_common04{
-	background: #eaf8eb;
 	padding: 5rem 0 9rem;
+}
+.lesson_common04.basic_lesson04{
+	background: #eaf8eb;
+}
+.lesson_common04.lesson02_04{
+	background: #fef6ef;
 }
 .lesson_common04 .box{
 	margin-top: 3rem;
@@ -2615,6 +2627,8 @@ footer .box03_in .r_item ul li a:hover{
 .lesson_common04 .box_in .item .txt a .link_txt p{
 	font-size: 1rem;
 	font-weight: 700;
+}
+.lesson_common04.basic_lesson04 .box_in .item .txt a .link_txt p{
 	color: #2e9648;
 }
 .lesson_common04 .box_in .item .txt a .link_txt p span{
