@@ -2516,9 +2516,7 @@ footer .box03_in .r_item ul li a:hover{
 	padding: 5rem 0 6rem;
 }
 .lesson_common03 .box{
-	max-width: 980px;
-	width: 100%;
-	margin: 3rem auto 0;
+	margin-top: 3rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -2532,7 +2530,7 @@ footer .box03_in .r_item ul li a:hover{
 }
 .lesson_common03 .box .txt{
 	width: 50%;
-	padding-left: 6%;
+	padding-left: 5%;
 }
 .lesson_common03 .box .txt ul li{
 	position: relative;
@@ -2568,6 +2566,9 @@ footer .box03_in .r_item ul li a:hover{
 }
 .lesson_common04.salsation04{
 	background: #fdf5fc;
+}
+.lesson_common04.instructor_training04{
+	background: #fbf1fd;
 }
 .lesson_common04 .box{
 	margin-top: 3rem;
