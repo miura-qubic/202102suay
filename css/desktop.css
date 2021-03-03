@@ -628,6 +628,64 @@ footer .box03_in .r_item ul li a:hover{
 .top01{
 	padding: 6rem 0 0;
 }
+.top01 .mv{
+	position: relative;
+	border: solid 3px #a4cc81;
+	padding: 3rem;
+	text-align: center;
+}
+.top01 .mv::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 125%;
+	height: 125%;
+	background: url(../images/top/mv_bg.png) center center / contain no-repeat;
+}
+.top01 .mv .en{
+	font-size: 0.875rem;
+	letter-spacing: 0.6em;
+}
+.top01 .mv h2{
+	font-size: 2rem;
+	letter-spacing: 0.6em;
+	margin-top: 2rem;
+}
+.top01 .mv h2 span{
+	display: block;
+	font-size: 1.2rem;
+}
+.top01 .mv .copy{
+	margin-top: 3rem;
+}
+.top01 .mv .copy p{
+	font-size: 0.875rem;
+	line-height: 2.4;
+}
+.top01 .mv .side_txt{
+	display: inline-block;
+	position: absolute;
+	bottom: 22rem;
+	left: 0;
+	transform: rotate(90deg);
+	transform-origin: center left;
+	background: #fff;
+	padding: 0 1rem;
+}
+.top01 .mv .side_txt p{
+	color: #040000;
+	letter-spacing: 0.3em;
+}
+.top01 .btn{
+	position: relative;
+	margin: 2rem 0 5rem;
+	z-index: 2;
+}
+.top01 .btn a{
+	width: 22rem;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ トップ02 ▼
