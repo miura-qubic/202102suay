@@ -92,6 +92,10 @@ $(function () {
 		return false;
 	});
 
+	$('.curriculum_table dl.head').on('click', function(){
+		$(this).next('.body').slideToggle(300);
+	});
+
 
 	// 一番最後に記述
 	$("body").removeClass("preload");

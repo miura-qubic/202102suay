@@ -2665,6 +2665,103 @@ footer .box03_in .r_item ul li a:hover{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ instructor_training05 ▼
+//
+///////////////////////////////////////////////////*/
+.instructor_training05{
+	padding: 5rem 0 7rem;
+}
+.instructor_training05 .box{
+	margin-top: 3rem;
+}
+.instructor_training05 .box_in{
+	margin-top: 4rem;
+}
+.instructor_training05 .box_in:first-of-type{
+	margin-top: 0;
+}
+.instructor_training05 .lesson_wrap{
+	margin-top: 0;
+}
+.instructor_training05 .box .curriculum_table{
+	margin-top: 2rem;
+}
+.instructor_training05 .box .curriculum_table .head{
+	cursor: pointer;
+}
+.instructor_training05 .box .curriculum_table .body{
+	display: none;
+}
+.instructor_training05 .box .curriculum_table dl{
+	display: flex;
+	flex-wrap: wrap;
+}
+.instructor_training05 .box .curriculum_table .l_item,
+.instructor_training05 .box .curriculum_table .r_item{
+	min-height: 7.6rem;
+	padding: 1rem 2rem;
+	border-bottom: solid 1px #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-right: solid 1px #000;
+}
+.instructor_training05 .box .curriculum_table .l_item{
+	align-items: center;
+	width: 28%;
+	text-align: center;
+	border-left: solid 1px #000;
+	background: #fbf1fd;
+}
+.instructor_training05 .box .curriculum_table .r_item{
+	align-items: flex-start;
+	width: 72%;
+}
+.instructor_training05 .box .curriculum_table .head .l_item,
+.instructor_training05 .box .curriculum_table .head .r_item{
+	border-top: solid 1px #000;
+}
+.instructor_training05 .box .curriculum_table .head .l_item{
+	color: #fff;
+	background: var(--purple);
+}
+.instructor_training05 .box .curriculum_table .body .l_item{
+	font-size: 1.625rem;
+	font-weight: 500;
+	color: #040000;
+}
+.instructor_training05 .box .curriculum_table .head .r_item{
+	background: #fbf1fd;
+}
+.instructor_training05 .box .curriculum_table .head .l_item p{
+	font-size: 1.625rem;
+	font-weight: 500;
+	line-height: 1.3;
+}
+.instructor_training05 .box .curriculum_table .head .l_item p span{
+	font-size: 1rem;
+}
+.instructor_training05 .box .curriculum_table .head .l_item p span::before{
+	content: '▽';
+	margin-right: 0.5rem;
+}
+.instructor_training05 .box .curriculum_table h4{
+	width: 100%;
+	color: #b22bcd;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.instructor_training05 .box .curriculum_table .body h4{
+	border-bottom: solid 1px #000;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.instructor_training05 .box .curriculum_table .body .r_item p{
+	font-size: 0.875rem;
+	line-height: 1.7;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ IE対策 ▼
 //
 ///////////////////////////////////////////////////*/
