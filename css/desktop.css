@@ -35,6 +35,7 @@ a{
 	max-width: 1920px;
 	margin: 0 auto;
 	height: auto;
+	overflow: hidden;
 }
 section,
 .section{
@@ -631,8 +632,17 @@ footer .box03_in .r_item ul li a:hover{
 .top01 .mv{
 	position: relative;
 	border: solid 3px #a4cc81;
-	padding: 3rem;
+	padding: 2rem;
 	text-align: center;
+}
+.top01 .mv_in{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: auto;
+	z-index: 2;
 }
 .top01 .mv::before{
 	position: absolute;
@@ -680,7 +690,7 @@ footer .box03_in .r_item ul li a:hover{
 }
 .top01 .btn{
 	position: relative;
-	margin: 2rem 0 5rem;
+	margin: 2.5rem 0 5rem;
 	z-index: 2;
 }
 .top01 .btn a{
@@ -764,6 +774,7 @@ footer .box03_in .r_item ul li a:hover{
 }
 .top02 .box .news_event .item article a time{
 	display: inline-block;
+	white-space: nowrap;
 	font-size: 0.875rem;
 	margin-right: 2.5rem;
 }
@@ -771,12 +782,14 @@ footer .box03_in .r_item ul li a:hover{
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: 0.25rem;
-	width: 5rem;
+	width: 6rem;
 	text-align: center;
 	border-radius: 0.3rem;
 	margin-right: 1.5rem;
+	white-space: nowrap;
 }
 .top02 .box .news_event .item article a h4{
+	width: 100%;
 	font-size: 0.875rem;
 	font-weight: 400;
 	transition: .3s;
@@ -826,6 +839,14 @@ footer .box03_in .r_item ul li a:hover{
 .top03 .box article:nth-of-type(2){
 	margin-right: 2%;
 }
+.top03 .box article a{
+	height: 100%;
+	background: #fff;
+	transition: background .3s;
+}
+.top03 .box article a:hover{
+	background: #f9f6f1;
+}
 .top03 .box article a .img{
 	overflow: hidden;
 }
@@ -838,12 +859,7 @@ footer .box03_in .r_item ul li a:hover{
 	transform: scale(1.05);
 }
 .top03 .box article a .txt{
-	background: #fff;
 	padding: 1rem 1rem 1.5rem;
-	transition: background .3s;
-}
-.top03 .box article a:hover .txt{
-	background: #f9f6f1;
 }
 .top03 .box article a .txt h4{
 	font-size: 1.25rem;
@@ -904,7 +920,7 @@ footer .box03_in .r_item ul li a:hover{
 	top: 50%;
 	right: 100%;
 	transform: translateY(-50%);
-	width: 300%;
+	width: 500%;
 	border: dotted 1px #767676;
 }
 .top03 .box article a .txt .minutes::before{
@@ -940,8 +956,8 @@ footer .box03_in .r_item ul li a:hover{
 	margin-top: 1.5rem;
 }
 .top03 .box article a .txt .btn p{
-	width: 97%;
-	font-size: 0.875rem;
+	width: 100%;
+	font-size: 0.75rem;
 }
 .top03 .box article a:hover .txt .btn p{
 	color: #fff;
@@ -990,9 +1006,15 @@ footer .box03_in .r_item ul li a:hover{
 	justify-content: space-around;
 	margin-top: 3rem;
 }
+.top04 .box .item{
+	width: 28%;
+}
 .top04 .box .item a{
-	width: 18.75rem;
-	height: 18.75rem;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	/* height: 18.75rem; */
 	background: #fff;
 	border-radius: 50%;
 	box-shadow: 0 2px 8px rgba(47,47,47,.2);
@@ -1007,7 +1029,13 @@ footer .box03_in .r_item ul li a:hover{
 	transform: scale(1.05);
 }
 .top04 .box .item a .inner{
-	height: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;
+	width: 100%;
+	height: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

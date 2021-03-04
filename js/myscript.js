@@ -32,29 +32,51 @@ $(function () {
 		$(this).addClass('active');
 	});
 
-	var swiper01 = new Swiper('.top01 .swiper-container', {
+	var swiper01 = new Swiper('.top01 .slide01.swiper-container', {
+		loop: true,
+		speed: 1000,
+		slidesPerView: 1,
+		spaceBetween: 30,
+		centeredSlides: true,
+		freeMode: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: true
+		}
+	});
+	var swiper02 = new Swiper('.top01 .slide02.swiper-container', {
 		loop: true,
 		speed: 10000,
 		slidesPerView: 9,
 		centeredSlides: true,
 		freeMode: true,
 		simulateTouch: false,
+		breakpoints: {
+			1025: {
+				slidesPerView: 6,
+			}
+		},
 		autoplay: {
 			delay: 1
 		}
 	});
-	var swiper02 = new Swiper('.top03 .swiper-container', {
+	var swiper03 = new Swiper('.top03 .swiper-container', {
 		loop: true,
 		speed: 8000,
 		slidesPerView: 6.5,
 		centeredSlides: true,
 		freeMode: true,
 		simulateTouch: false,
+		breakpoints: {
+			1025: {
+				slidesPerView: 4.5,
+			}
+		},
 		autoplay: {
 			delay: 1
 		}
 	});
-	var swiper03 = new Swiper('.school03 .swiper-container', {
+	var swiper04 = new Swiper('.school03 .swiper-container', {
 		loop: true,
 		speed: 1000,
 		slidesPerView: 1,

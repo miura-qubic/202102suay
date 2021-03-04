@@ -1,0 +1,147 @@
+/*///////////////////////////////////////////////////
+//
+//            ▼ ナビ ▼
+//
+///////////////////////////////////////////////////*/
+header .container{
+	width: 95%;
+}
+.header_in{
+	height: 6.5rem;
+}
+header .logo a,
+body.top header .header_in.active .logo a{
+	width: 6.5rem;
+}
+body.top header .logo a{
+	width: 8rem;
+}
+header .logo .txt,
+body.top header .header_in.active .logo .txt{
+	top: 1.25rem;
+	margin-left: 2rem;
+}
+header .logo .txt .sitename{
+	font-size: 1.6rem;
+}
+header .logo .txt .sub .txt01{
+	font-size: 0.875rem;
+}
+header .logo .txt .sub .txt02{
+	font-size: 0.75rem;
+}
+header nav,
+body.top header .header_in.active nav{
+	margin: auto 0 0 3rem;
+}
+header nav .btn_wrap{
+	margin-bottom: 0.5rem;
+}
+body.top header nav{
+	margin: auto 0 0 2rem;
+}
+header nav ul li{
+	margin-right: 1.5rem;
+}
+header nav ul li:last-of-type{
+	margin-right: 0;
+}
+header nav ul li a{
+	font-size: 0.75rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ01 ▼
+//
+///////////////////////////////////////////////////*/
+.top01 .mv{
+	padding: 1.5rem;
+}
+.top01 .mv .en{
+	font-size: 0.75rem;
+	letter-spacing: 0.4em;
+}
+.top01 .mv h2{
+	font-size: 1.5rem;
+	letter-spacing: 0.4em;
+	margin-top: 1.5rem;
+}
+.top01 .mv h2 span{
+	font-size: 1rem;
+}
+.top01 .mv .copy{
+	margin-top: 1.25rem;
+}
+.top01 .mv .copy p{
+	font-size: 0.75rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ02 ▼
+//
+///////////////////////////////////////////////////*/
+.top02 .box .classroom_list{
+	padding: 0 2rem;
+}
+.top02 .box .news_event{
+	padding: 0 0 0 2rem;
+}
+.top02 .box .news_event .item article a time{
+	margin-right: 1.5rem;
+}
+.top02 .box .news_event .item article a .cat{
+	margin-right: 1rem;
+}
+.top02 .box .news_event .item article a h4{
+	-webkit-line-clamp: 1;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ03 ▼
+//
+///////////////////////////////////////////////////*/
+.top03 .box{
+	flex-wrap: wrap;
+}
+.top03 .box article{
+	width: 48%;
+	margin-top: 2rem;
+}
+.top03 .box article:nth-of-type(1),
+.top03 .box article:nth-of-type(3){
+	margin-top: 0;
+}
+.top03 .box article:nth-of-type(1){
+	order: 1;
+}
+.top03 .box article:nth-of-type(2){
+	order: 3;
+	margin-right: 0;
+}
+.top03 .box article:nth-of-type(3){
+	order: 2;
+}
+.top03 .box article:nth-of-type(4){
+	order: 4;
+}
+.top03 .box article a .txt{
+	padding: 1rem 2rem 2rem;
+}
+.top03 .box article a .txt .btn p{
+	width: 90%;
+	font-size: 0.875rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ04 ▼
+//
+///////////////////////////////////////////////////*/
+.top04 .box .item a .inner h4{
+	font-size: 1rem;
+}
+.top04 .box .item a .inner .img img{
+	height: 4rem;
+}
+.top04 .box .item a .inner p{
+	font-size: 0.875rem;
+}
