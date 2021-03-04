@@ -5,15 +5,15 @@
 //
 ///////////////////////////////////////////////////*/
 @font-face {
-	font-family: "myfont";
-	src: url(../fonts/.woff) format("woff"),
-				url(../fonts/.otf) format("otf");
+	font-family: "apple_chancery";
+	src: url(../fonts/Apple_Chancery.ttf) format("truetype");
 }
 body{-webkit-text-size-adjust: 100%;}
 html{
 	color: #000;
 	font-size: 15px;
 	line-height: 2;
+	font-family: 'Noto Sans JP', sans-serif;
 	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
@@ -21,12 +21,13 @@ html{
 	-webkit-text-size-adjust: 100%;
 }
 a{
-	color: ;
+	color: #000;
 	display: block;
 }
 #wrapper{
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 section,
 .section{
@@ -34,17 +35,17 @@ section,
 	height: auto;
 	position: relative;
 }
-.l_container{
+/* .l_container{
 	width: 100%;
 	padding:0 1rem;
-}
+} */
 .container{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
 	padding:0 2rem;
 }
-.m_container{
+/* .m_container{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
@@ -55,7 +56,7 @@ section,
 	max-width: 650px;
 	margin: 0 auto;
 	padding:0 2rem;
-}
+} */
 .is_pc{display: none;}
 .is_hidden_tab{display: none;}
 :root{
@@ -67,6 +68,11 @@ section,
 	--twitter: #1DA1F2;
 	--line: #00B900;
 	--youtube: #DA1725;
+	--green: #2e9648;
+	--emegreen: #35b79d;
+	--orange: #f7ad6f;
+	--pink: #f29c9f;
+	--purple: #c09ce9;
 }
 .objectCover {
 	width:100%;
@@ -96,23 +102,197 @@ section,
 //            ▼ 共通 ▼
 //
 ///////////////////////////////////////////////////*/
-
+main{
+	margin-top: 8.125rem;
+}
+.notoserif{
+	font-family: 'Noto Serif JP', serif;
+}
+.hiragino{
+	font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.apple_chancery{
+	font-family: "apple_chancery", serif;
+	font-weight: normal;
+}
+.btn a,
+.btn p{
+	position: relative;
+	font-size: 1rem;
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+	background: var(--green);
+	width: 18.75rem;
+	height: 3.125rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 1px var(--green);
+	border-radius: 2rem;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: color .3s cubic-bezier(.79,.01,.21,.96);
+}
+.btn.white a,
+.btn.white p{
+	color: var(--green);
+	background: #fff;
+}
+.btn.emegreen a,
+.btn.emegreen p{
+	background: var(--emegreen);
+	border: solid 1px var(--emegreen);
+}
+.btn.orange a,
+.btn.orange p{
+	background: var(--orange);
+	border: solid 1px var(--orange);
+}
+.btn.pink a,
+.btn.pink p{
+	background: var(--pink);
+	border: solid 1px var(--pink);
+}
+.btn.purple a,
+.btn.purple p{
+	background: var(--purple);
+	border: solid 1px var(--purple);
+}
+.btn a span,
+.btn p span{
+	position: relative;
+	z-index: 2;
+}
+.btn a span::after,
+.btn p span::after{
+	position: absolute;
+	content: '＞';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%) translateY(0.05rem);
+	margin-left: 0.3rem;
+	transition: transform .3s cubic-bezier(.79,.01,.21,.96);
+}
+.cat.news{
+	background: #8ecebe;
+}
+.cat.event{
+	background: #f5bbd4;
+}
+.ttl_wrap{
+	position: relative;
+	text-align: center;
+	color: #040000;
+	padding-top: 2rem;
+}
+.ttl_wrap::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 32px;
+	height: 23px;
+	background: url(../images/common/ttl_fig.png) center center / contain no-repeat;
+}
+.ttl_wrap.purple::before{
+	background: url(../images/common/ttl_fig_purple.png) center center / contain no-repeat;
+}
+.ttl_wrap.emegreen::before{
+	background: url(../images/common/ttl_fig_emegreen.png) center center / contain no-repeat;
+}
+.ttl_wrap.green::before{
+	background: url(../images/common/ttl_fig_green.png) center center / contain no-repeat;
+}
+.ttl_wrap.orange::before{
+	background: url(../images/common/ttl_fig_orange.png) center center / contain no-repeat;
+}
+.ttl_wrap.pink::before{
+	background: url(../images/common/ttl_fig_pink.png) center center / contain no-repeat;
+}
+.ttl_wrap .ttl{
+	font-size: 1.875rem;
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 500;
+}
+.ttl_wrap .en{
+	font-size: 1rem;
+	font-family: "apple_chancery", serif;
+	letter-spacing: 0.3em;
+}
+.fadein{
+	opacity: 0;
+	transform: translateY(50px);
+}
+.fadein.active{
+	opacity: 1;
+	transform: translateY(0);
+}
+.fade01.active{
+	transition: .3s;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ ナビ ▼
 //
 ///////////////////////////////////////////////////*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 50000;
+}
+header .container{
+	padding: 0 1rem;
+}
+.header_in{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+header .txt{
+	text-align: center;
+}
+header .txt p{
+	font-size: 0.6rem;
+	font-weight: 400;
+}
+body.top header .logo a{
+	width: 7rem;
+}
+header .logo a img{
+	width: 100%;
+	height: auto;
+}
+header .logo .txt{
+	width: 100%;
+	text-align: center;
+}
+
+header nav{
+	display: none;
+}
+
 .menu_open{
 	width: 3rem;
+	height: 2.25rem;
 	position: relative;
+	border: solid 2px #f9f6f1;
+	border-radius: 2px;
 }
 .menu_open span{
 	position: absolute;
 	top:50%;
 	left:50%;
-	background: #fff;
+	background: #717171;
 	width: 40%;
 	height: 2px;
+	border-radius: 1px;
 	transition: .3s;
 }
 .menu_open span:nth-of-type(1){transform:translate(-50%,-50%) translateY(5px);}
