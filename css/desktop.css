@@ -635,15 +635,6 @@ footer .box03_in .r_item ul li a:hover{
 	padding: 2rem;
 	text-align: center;
 }
-.top01 .mv_in{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 100%;
-	height: auto;
-	z-index: 2;
-}
 .top01 .mv::before{
 	position: absolute;
 	content: '';
@@ -653,6 +644,15 @@ footer .box03_in .r_item ul li a:hover{
 	width: 125%;
 	height: 125%;
 	background: url(../images/top/mv_bg.png) center center / contain no-repeat;
+}
+.top01 .mv_in{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: auto;
+	z-index: 2;
 }
 .top01 .mv .en{
 	font-size: 0.875rem;
@@ -792,6 +792,7 @@ footer .box03_in .r_item ul li a:hover{
 	width: 100%;
 	font-size: 0.875rem;
 	font-weight: 400;
+	-webkit-line-clamp: 1;
 	transition: .3s;
 }
 .top02 .box .news_event .item article a:hover h4{

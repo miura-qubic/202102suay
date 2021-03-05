@@ -8,10 +8,12 @@ const tabletwidth = 1025;
 {
 	const openMenu = document.getElementById('menu_open');
 	const Nav = document.querySelector('header nav');
+	const body = document.querySelector('body');
 
 	openMenu.addEventListener('click', function () {
 		openMenu.classList.toggle('active');
 		Nav.classList.toggle('active');
+		body.classList.toggle('active');
 	});
 }
 
@@ -21,8 +23,10 @@ $(function () {
 	// ヘッダー
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 500){
+			$('header').addClass('active');
 			$('.header_in').addClass('active');
 		}else{
+			$('header').removeClass('active');
 			$('.header_in').removeClass('active');
 		}
 	});
@@ -36,9 +40,10 @@ $(function () {
 		loop: true,
 		speed: 1000,
 		slidesPerView: 1,
-		spaceBetween: 30,
+		// spaceBetween: 1000,
 		centeredSlides: true,
 		freeMode: true,
+		effect: 'fade',
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: true
@@ -54,6 +59,9 @@ $(function () {
 		breakpoints: {
 			1025: {
 				slidesPerView: 6,
+			},
+			767: {
+				slidesPerView: 3,
 			}
 		},
 		autoplay: {
@@ -70,6 +78,9 @@ $(function () {
 		breakpoints: {
 			1025: {
 				slidesPerView: 4.5,
+			},
+			767: {
+				slidesPerView: 2.4,
 			}
 		},
 		autoplay: {
