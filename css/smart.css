@@ -357,8 +357,12 @@ header .txt p{
 	align-items: center;
 	justify-content: center;
 }
-body header .logo a{
+header .logo a{
 	width: 5.5rem;
+	transition: .3s;
+}
+header .header_in.active .logo a{
+	width: 4rem;
 }
 header .logo a img{
 	width: 100%;
