@@ -291,7 +291,7 @@ main{
 
 .fixed_taiken_btn{
 	position: fixed;
-	top: 6.75rem;
+	top: 7rem;
 	right: 0;
 	z-index: 49999;
 }
@@ -357,7 +357,7 @@ header .txt p{
 	align-items: center;
 	justify-content: center;
 }
-body.top header .logo a{
+body header .logo a{
 	width: 5.5rem;
 }
 header .logo a img{
@@ -1227,10 +1227,83 @@ footer .box03_in .copyright{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ パンくずリスト ▼
+//
+///////////////////////////////////////////////////*/
+.breadcrumb{
+	margin: 0;
+	list-style: none;
+	background: #fff;
+}
+.breadcrumb ol{
+	display: flex;
+	align-items: center;
+}
+.breadcrumb li{
+	font-size: 0.875rem;
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.breadcrumb li::after{
+	content: '>';
+	padding: 0 0.5em 0 1em;
+}
+.breadcrumb li:last-child::after{
+	content: '';
+}
+.breadcrumb li a{
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0;
+	color: #040000;
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 400;
+}
+.breadcrumb li a .icon{
+	display: inline-block;
+	width: 1.25rem;
+	height: 1.1875rem;
+}
+.breadcrumb li a .icon img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ 下層共通 ▼
 //
 ///////////////////////////////////////////////////*/
-
+.lower_mv{
+	background: url(../images/common/lower_mv.jpg) center center / cover no-repeat;
+	padding: 2.5rem 0;
+}
+.lower_mv .lower_ttl{
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-shadow: 0 0 13px rgba(47,47,47,.69);
+}
+.lower_mv .lower_ttl span{
+	display: block;
+	font-size: 0.8rem;
+	font-family: "apple_chancery", serif;
+	letter-spacing: 0.3em;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ lesson共通 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_wrap{
+	background: #fff;
+	border: solid 1px #000;
+	border-radius: 6px;
+	padding: 1.5rem 1rem;
+	margin-top: 2.5rem;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ IE対策 ▼
