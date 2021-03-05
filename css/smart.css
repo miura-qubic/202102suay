@@ -384,6 +384,9 @@ header nav{
 	z-index: 50003;
 	transition: .3s;
 }
+header .header_in.active nav{
+	top: 5.5rem;
+}
 header nav.active{
 	right: 0;
 }
