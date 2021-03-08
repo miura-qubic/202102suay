@@ -8,6 +8,21 @@ main{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ swiper ▼
+//
+///////////////////////////////////////////////////*/
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next{
+	width: 29.6px!important;
+	height: 57.6px!important;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev{
+	width: 29.6px!important;
+	height: 57.6px!important;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ ナビ ▼
 //
 ///////////////////////////////////////////////////*/
@@ -100,9 +115,6 @@ header nav ul li a{
 .top02 .box .news_event .item article a .cat{
 	margin-right: 1rem;
 }
-.top02 .box .news_event .item article a h4{
-	-webkit-line-clamp: 1;
-}
 /*///////////////////////////////////////////////////
 //
 //            ▼ トップ03 ▼
@@ -152,6 +164,27 @@ header nav ul li a{
 }
 .top04 .box .item a .inner p{
 	font-size: 0.875rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ lesson共通 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_wrap{
+	padding: 1.5rem;
+}
+.lesson_wrap.purple .l_item .ttl .en{
+	font-size: 0.9rem;
+	letter-spacing: 0.2em;
+}
+.lesson_wrap .l_item .price{
+	padding: 0;
+}
+.lesson_wrap .l_item .price p span{
+	margin-right: 1.5rem;
+}
+.lesson_wrap .txt{
+	padding: 0 3.5%;
 }
 /*///////////////////////////////////////////////////
 //
@@ -220,3 +253,37 @@ header nav ul li a{
 .instructors_schools02 .box .item .school_wrap .lesson li{
 	margin-bottom: 0.5rem;
 }
+/*///////////////////////////////////////////////////
+//
+//            ▼ school01 ▼
+//
+///////////////////////////////////////////////////*/
+.school01 .txt{
+	height: 30vh;
+	min-height: 17rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ school02 ▼
+//
+///////////////////////////////////////////////////*/
+.school02 .menu li{
+	margin-right: 4.5rem;
+}
+.school02 .news_event .l_item{
+	width: 33%;
+}
+.school02 .news_event .r_item{
+	width: 67%;
+}
+.school02 .news_event .r_item article a time{
+	margin-right: 1rem;
+}
+.school02 .news_event .r_item article a .cat{
+	margin-right: 1rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ school03 ▼
+//
+///////////////////////////////////////////////////*/

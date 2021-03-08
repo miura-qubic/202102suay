@@ -314,11 +314,16 @@ a:hover .btn p span::after{
 	width: 37px!important;
 	height: 72px!important;
 }
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev{
 	transform: translateY(-50%);
 	background: url(../images/common/slider_next.png) center center / contain no-repeat!important;
 	width: 37px!important;
 	height: 72px!important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+	outline: none;
 }
 /*///////////////////////////////////////////////////
 //
@@ -2283,18 +2288,22 @@ footer .box03_in .r_item ul li a:hover{
 .school02 .news_event{
 	margin-top: 2.5rem;
 	display: flex;
-	align-items: center;
 }
 .school02 .news_event .l_item{
-	width: 38%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
 	text-align: center;
+	border-right: dotted 1px #7f7f7f;
 }
 .school02 .news_event .l_item h3{
 	font-size: 1.25rem;
 	color: var(--green);
 }
 .school02 .news_event .r_item{
-	width: 62%;
+	width: 70%;
+	padding-left: 5%;
 }
 .school02 .news_event .r_item article{
 	margin-top: 0.25rem;
@@ -2308,6 +2317,7 @@ footer .box03_in .r_item ul li a:hover{
 }
 .school02 .news_event .r_item article a time{
 	display: inline-block;
+	white-space: nowrap;
 	font-size: 0.875rem;
 	margin-right: 2.5rem;
 }
@@ -2315,14 +2325,17 @@ footer .box03_in .r_item ul li a:hover{
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: 0.25rem;
-	width: 5rem;
+	width: 6rem;
 	text-align: center;
 	border-radius: 0.3rem;
 	margin-right: 1.5rem;
+	white-space: nowrap;
 }
 .school02 .news_event .r_item article a h4{
+	width: 100%;
 	font-size: 0.875rem;
 	font-weight: 400;
+	-webkit-line-clamp: 1;
 	transition: .3s;
 }
 .school02 .news_event .r_item article a:hover h4{
@@ -2351,6 +2364,7 @@ footer .box03_in .r_item ul li a:hover{
 .school03 .slider .slider_in{
 	max-width: 980px;
 	margin: 0 auto;
+	width: 85%;
 }
 .school03 .slider .img{
 	border-radius: 6px;
