@@ -1,5 +1,13 @@
 /*///////////////////////////////////////////////////
 //
+//            ▼ 共通 ▼
+//
+///////////////////////////////////////////////////*/
+main{
+	margin-top: 6.5rem;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ ナビ ▼
 //
 ///////////////////////////////////////////////////*/
@@ -144,4 +152,55 @@ header nav ul li a{
 }
 .top04 .box .item a .inner p{
 	font-size: 0.875rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial03 ▼
+//
+///////////////////////////////////////////////////*/
+.trial03 .box .item{
+	width: 31%;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial04 ▼
+//
+///////////////////////////////////////////////////*/
+.trial04 .box .step01 .item_in .inner{
+	width: 23.5%;
+	margin-right: 2%;
+}
+.trial04 .box .step02 .item_in .txt_in{
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+.trial04 .box .step02 .item_in .txt_in:last-of-type{
+	padding-bottom: 2.5rem;
+}
+.trial04 .box .step02 .item_in .txt dt,
+.trial04 .box .step02 .item_in .txt dd{
+	padding: 0 0.5rem;
+}
+.trial04 .box .step02 .item_in .txt dt{
+	width: 35%;
+}
+.trial04 .box .step02 .item_in .txt dd{
+	font-size: 0.875rem;
+	width: 65%;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ trial05 ▼
+//
+///////////////////////////////////////////////////*/
+.trial05 .box02 .txt01 p,
+.trial05 .box02 .txt01 h3{
+	font-size: 3.25rem;
+}
+.trial05 .box02 .txt01 p span{
+	font-size: 2rem;
+}
+.trial05 .box02 .item .inner{
+	width: 23.5%;
+	margin-right: 2%;
 }
