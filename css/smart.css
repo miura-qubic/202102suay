@@ -105,7 +105,7 @@ section,
 ///////////////////////////////////////////////////*/
 body.active{ overflow: hidden; }
 main{
-	margin-top: 8rem;
+	margin-top: 7rem;
 }
 .notoserif{
 	font-family: 'Noto Serif JP', serif;
@@ -1248,7 +1248,7 @@ footer .box03_in .copyright{
 	align-items: center;
 }
 .breadcrumb li{
-	font-size: 0.875rem;
+	font-size: 0.8rem;
 	display: flex;
 	align-items: center;
 	list-style: none;
@@ -1270,8 +1270,8 @@ footer .box03_in .copyright{
 }
 .breadcrumb li a .icon{
 	display: inline-block;
-	width: 1.25rem;
-	height: 1.1875rem;
+	width: 1.2rem;
+	height: 1.14rem;
 }
 .breadcrumb li a .icon img{
 	display: block;
@@ -1834,6 +1834,231 @@ footer .box03_in .copyright{
 .trial05 .box02 .txt02 p{
 	font-size: 0.8rem;
 	line-height: 2.15;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ instructors_schools02 ▼
+//
+///////////////////////////////////////////////////*/
+.instructors_schools02{
+	padding: 2.5rem 0 3rem;
+}
+.instructors_schools02 .box .item{
+	border: solid 1px #000;
+	border-radius: 6px;
+	padding: 1rem 1.5rem 2rem;
+	margin-top: 2rem;
+}
+.instructors_schools02 .box .item:first-of-type{
+	margin-top: 0;
+}
+.instructors_schools02 .box .item .profile .img{
+	width: 10rem;
+	height: 10rem;
+	margin: 0 auto 0.5rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.instructors_schools02 .box .item .profile .img img{
+	width: 100%;
+	height: auto;
+}
+.instructors_schools02 .box .item .profile .txt h2{
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+.instructors_schools02 .box .item .profile .txt ul li{
+	font-size: 0.9rem;
+	line-height: 1.65;
+}
+.instructors_schools02 .box .item .msg{
+	margin-top: 2rem;
+}
+.instructors_schools02 .box .item .msg p{
+	font-size: 0.9rem;
+	line-height: 1.65;
+}
+.instructors_schools02 .box .item .school_wrap{
+	margin-top: 2rem;
+}
+.instructors_schools02 .box .item .school_wrap h3{
+	font-size: 1rem;
+	font-weight: 700;
+	border-bottom: solid 1px #000;
+	padding-bottom: 0.3rem;
+	margin-bottom: 1rem;
+}
+.instructors_schools02 .box .item .school_wrap .lesson{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.instructors_schools02 .box .item .school_wrap .lesson li{
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 1;
+	width: 7rem;
+	padding: 0.75rem 0.5rem;
+	margin: 0 0.5rem 0.5rem 0;
+	border-radius: 1.5rem;
+}
+.instructors_schools02 .box .item .school_wrap .lesson li:last-of-type{
+	margin-right: 0;
+}
+.instructors_schools02 .box .item .school_wrap .lesson li.emegreen{
+	color: var(--emegreen);
+	border: solid 1px var(--emegreen);
+}
+.instructors_schools02 .box .item .school_wrap .lesson li.green{
+	color: var(--green);
+	border: solid 1px var(--green);
+}
+.instructors_schools02 .box .item .school_wrap .lesson li.orange{
+	color: var(--orange);
+	border: solid 1px var(--orange);
+}
+.instructors_schools02 .box .item .school_wrap .lesson li.pink{
+	color: var(--pink);
+	border: solid 1px var(--pink);
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap{
+	margin-top: 0.5rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt,
+.instructors_schools02 .box .item .school_wrap .access_wrap dd{
+	font-size: 0.75rem;
+	line-height: 1.5;
+	margin-left: 1.25rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt{
+	position: relative;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: -1.25rem;
+	transform: translateY(-50%);
+	width: 0.8125rem;
+	height: 1.1875rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt.address::before{
+	background: url(../images/instructors_schools/instructors_schools02_icon01.png) center center / contain no-repeat;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt.tel::before{
+	background: url(../images/instructors_schools/instructors_schools02_icon02.png) center center / contain no-repeat;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dt.access::before{
+	background: url(../images/instructors_schools/instructors_schools02_icon03.png) center center / contain no-repeat;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dd{
+	margin-bottom: 1rem;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap dd:last-of-type{
+	margin-bottom: 0;
+}
+.instructors_schools02 .box .item .school_wrap .access_wrap .img{
+	border-radius: 6px;
+	overflow: hidden;
+	margin-top: 1.5rem;
+}
+.instructors_schools02 .box .item .btn{
+	margin-top: 1.5rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ instructors_schools03 ▼
+//
+///////////////////////////////////////////////////*/
+.instructors_schools03{
+	padding: 1rem 0 5rem;
+}
+.instructor_wrap .ttl{
+	position: relative;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+	overflow: hidden;
+}
+.instructor_wrap .ttl::before,
+.instructor_wrap .ttl::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	width: 50%;
+	height: 1rem;
+}
+.instructor_wrap .ttl::before{
+	left: 50%;
+	transform: translate(-50%,-50%) translateX(-95%);
+	background: url(../images/trial/trial03_fig01.png) right top / cover no-repeat;
+}
+.instructor_wrap .ttl::after{
+	left: 50%;
+	transform: translate(-50%,-50%) translateX(95%);
+	background: url(../images/trial/trial03_fig01.png) left top / cover no-repeat;
+}
+.instructor_wrap .main_item{
+	width: 100%;
+	max-width: 300px;
+	width: 100%;
+	margin: 2rem auto 0;
+}
+.instructor_wrap .main_item .img{
+	border-radius: 6px;
+	overflow: hidden;
+}
+.instructor_wrap .main_item .txt{
+	margin-top: 0.75rem;
+}
+.instructor_wrap .main_item .txt .instructor_name{
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+.instructor_wrap .main_item .txt ul li{
+	font-size: 0.9rem;
+	line-height: 1.65;
+}
+.instructor_wrap .main_item .txt .msg{
+	margin-top: 2rem;
+}
+.instructor_wrap .main_item .txt .msg p{
+	font-size: 0.9rem;
+	line-height: 1.72;
+}
+.instructor_wrap .box_in{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+}
+.instructor_wrap .box_in .item{
+	width: 47%;
+	margin-top: 2rem;
+}
+.instructor_wrap .box_in .item:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.instructor_wrap .box_in .item .img{
+	border-radius: 6px;
+	overflow: hidden;
+}
+.instructor_wrap .box_in .item .img img{
+	width: 100%;
+	height: auto;
+}
+.instructor_wrap .box_in .item .txt{
+	margin-top: 0.75rem;
+}
+.instructor_wrap .box_in .item .txt .instructor_name{
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 0.25rem;
+}
+.instructor_wrap .box_in .item .txt p{
+	font-size: 0.9rem;
+	line-height: 1.65;
 }
 /*///////////////////////////////////////////////////
 //

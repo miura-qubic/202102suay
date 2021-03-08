@@ -204,3 +204,19 @@ header nav ul li a{
 	width: 23.5%;
 	margin-right: 2%;
 }
+/*///////////////////////////////////////////////////
+//
+//            ▼ instructors_schools02 ▼
+//
+///////////////////////////////////////////////////*/
+.instructors_schools02 .box .item .profile .img{
+	width: 7.5rem;
+	height: 7.5rem;
+}
+.instructors_schools02 .box .item .profile .txt{
+	width: calc(100% - 7.5rem);
+	padding-left: 1.5rem;
+}
+.instructors_schools02 .box .item .school_wrap .lesson li{
+	margin-bottom: 0.5rem;
+}

@@ -1974,6 +1974,9 @@ footer .box03_in .r_item ul li a:hover{
 	padding: 1rem 1.5rem 2.5rem;
 	margin-top: 3rem;
 }
+.instructors_schools02 .box .item:nth-of-type(-n+2){
+	margin-top: 0;
+}
 .instructors_schools02 .box .item .profile{
 	display: flex;
 	align-items: center;
@@ -2020,12 +2023,13 @@ footer .box03_in .r_item ul li a:hover{
 .instructors_schools02 .box .item .school_wrap .lesson{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .instructors_schools02 .box .item .school_wrap .lesson li{
 	font-size: 0.6rem;
 	text-align: center;
 	line-height: 1;
-	width: 6.25rem;
+	width: 7rem;
 	padding: 0.75rem 0.5rem;
 	margin-right: 0.5rem;
 	border-radius: 1.5rem;
