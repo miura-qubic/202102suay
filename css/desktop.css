@@ -2878,7 +2878,7 @@ footer .box03_in .r_item ul li a:hover{
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	}
+}
 .post_wrap .main_contents article{
 	width: 31.5%;
 	margin: 1.5rem 2.75% 0 0;
@@ -2996,6 +2996,7 @@ footer .box03_in .r_item ul li a:hover{
 	font-size: 0.875rem;
 	font-weight: 500;
 	line-height: 1.43;
+	-webkit-line-clamp: 3;
 	transition: .3s;
 }
 .post_wrap_in aside .box01 article a:hover .txt .article_ttl{

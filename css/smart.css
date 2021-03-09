@@ -2706,6 +2706,136 @@ footer .box03_in .copyright{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ 投稿共通 ▼
+//
+///////////////////////////////////////////////////*/
+.post_wrap{
+	padding: 2.5rem 0 3.5rem;
+}
+.post_wrap .main_contents_in{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.post_wrap .main_contents article{
+	width: 47.5%;
+	margin-top: 1.25rem;
+	border: solid 1px #e5e5e5;
+}
+.post_wrap .main_contents article:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.post_wrap .main_contents article a .img{
+	border: solid 1px #e5e5e5;
+}
+.post_wrap .main_contents article a .img img{
+	width: 100%;
+	height: auto;
+}
+.post_wrap .main_contents article a .txt{
+	padding: 0.75rem;
+}
+.post_wrap .main_contents article a .txt .shop_name,
+.post_wrap .main_contents article a .txt .article_ttl{
+	font-size: 0.8rem;
+	font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+	font-weight: bold;
+	line-height: 1.43;
+}
+.post_wrap .main_contents article a .txt .shop_name{
+	color: #254812;
+}
+.post_wrap .pagenation{
+	margin-top: 3rem;
+}
+.post_wrap .pagenation ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.post_wrap .pagenation ul li{
+	margin-right: 1rem;
+}
+.post_wrap .pagenation ul li span,
+.post_wrap .pagenation ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.post_wrap .pagenation ul li span{
+	color: #fff;
+	background: #254812;
+}
+.post_wrap .pagenation ul li a{
+	border: solid 1px #254812;
+}
+
+.post_wrap_in aside{
+	margin-top: 4rem;
+}
+.post_wrap_in aside .ttl{
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #fff;
+	background: #254812;
+	border: solid 1px #000;
+	padding: 0.25rem 1rem;
+}
+.post_wrap_in aside .box01 article{
+	border-left: solid 1px rgba(0,0,0,.3);
+	border-right: solid 1px rgba(0,0,0,.3);
+	border-bottom: solid 1px rgba(0,0,0,.3);
+}
+.post_wrap_in aside .box01 article a{
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
+.post_wrap_in aside .box01 article a .img{
+	border: solid 1px #e5e5e5;
+	width: 35%;
+}
+.post_wrap_in aside .box01 article a .img img{
+	width: 100%;
+	height: auto;
+}
+.post_wrap_in aside .box01 article a .txt{
+	width: 65%;
+	padding-left: 5%;
+}
+.post_wrap_in aside .box01 article a .txt .article_ttl{
+	font-size: 0.8rem;
+	font-weight: 500;
+	line-height: 1.43;
+	-webkit-line-clamp: 3;
+	transition: .3s;
+}
+
+.post_wrap_in aside .box02{
+	margin-top: 2rem;
+}
+.post_wrap_in aside .box02 ul{
+	padding: 0.75rem;
+}
+.post_wrap_in aside .box02 ul li a{
+	font-size: 0.8rem;
+	font-weight: 500;
+	line-height: 2.5;
+}
+.post_wrap_in aside .box02 .bnr_wrap{
+	margin-top: 1rem;
+}
+.post_wrap_in aside .bnr_wrap a + a{
+	margin-top: 1rem;
+}
+.post_wrap_in aside .bnr_wrap a .img img{
+	width: 100%;
+	height: auto;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ IE対策 ▼
 //
 ///////////////////////////////////////////////////*/

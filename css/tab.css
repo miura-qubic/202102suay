@@ -321,3 +321,14 @@ header nav ul li a{
 .instructor_training05 .box .curriculum_table .head .l_item p{
 	font-size: 1.3rem;
 }
+/*///////////////////////////////////////////////////
+//
+//            ▼ 投稿共通 ▼
+//
+///////////////////////////////////////////////////*/
+.post_wrap_in aside .box01 article a{
+	padding: 0.75rem;
+}
+.post_wrap_in aside .box01 article a .txt .article_ttl{
+	-webkit-line-clamp: 2;
+}
