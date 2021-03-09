@@ -2629,7 +2629,12 @@ footer .box03_in .r_item ul li a:hover{
 .lesson_common03 .box .txt ul li{
 	position: relative;
 	font-weight: 500;
-	line-height: 3;
+	margin-top: 1rem;
+	padding-left: 2em;
+	text-indent: -2em;
+}
+.lesson_common03 .box .txt ul li:first-of-type{
+	margin-top: 0;
 }
 .lesson_common03 .box .txt ul li::before{
 	content: '□';
@@ -2638,7 +2643,7 @@ footer .box03_in .r_item ul li a:hover{
 .lesson_common03 .box .txt ul li::after{
 	position: absolute;
 	content: '';
-	top: -0.4rem;
+	top: -0.9rem;
 	left: -0.25rem;
 	background: url(../images/common/check.png) center center / contain no-repeat;
 	width: 1.875rem;

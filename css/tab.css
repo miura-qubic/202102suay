@@ -300,8 +300,24 @@ header nav ul li a{
 //
 ///////////////////////////////////////////////////*/
 .lesson_common04 .box_in .item .txt a h3{
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 }
 .lesson_common04 .box_in .item .txt a .link_txt{
 	margin-top: 1.5rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ instructor_training05 ▼
+//
+///////////////////////////////////////////////////*/
+.instructor_training05 .box .curriculum_table .l_item,
+.instructor_training05 .box .curriculum_table .r_item{
+	min-height: 7.6rem;
+	padding: 1rem 1.25rem;
+}
+.instructor_training05 .box .curriculum_table .body .l_item{
+	font-size: 1.3rem;
+}
+.instructor_training05 .box .curriculum_table .head .l_item p{
+	font-size: 1.3rem;
 }
