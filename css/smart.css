@@ -2460,6 +2460,156 @@ footer .box03_in .copyright{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ lesson_common03 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common03{
+	padding: 2.5rem 0 3.5rem;
+}
+.lesson_common03 .box{
+	margin-top: 2rem;
+}
+.lesson_common03 .box .img{
+	max-width: 350px;
+	margin: 0 auto;
+}
+.lesson_common03 .box .img img{
+	width: 100%;
+	height: auto;
+}
+.lesson_common03 .box .txt{
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.lesson_common03 .box .txt ul li{
+	position: relative;
+	font-size: 0.8rem;
+	font-weight: 500;
+	line-height: 3;
+}
+.lesson_common03 .box .txt ul li::before{
+	content: '□';
+	margin-right: 0.5rem;
+}
+.lesson_common03 .box .txt ul li::after{
+	position: absolute;
+	content: '';
+	top: 0.2rem;
+	left: -0.15rem;
+	background: url(../images/common/check.png) center center / contain no-repeat;
+	width: 1.125rem;
+	height: 1.2375rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ basic_lesson04 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common04{
+	padding: 2.5rem 0 4rem;
+}
+.lesson_common04.basic_lesson04{
+	background: #eaf8eb;
+}
+.lesson_common04.lesson02_04{
+	background: #fef6ef;
+}
+.lesson_common04.salsation04{
+	background: #fdf5fc;
+}
+.lesson_common04.instructor_training04{
+	background: #fbf1fd;
+}
+.lesson_common04 .box{
+	margin-top: 2rem;
+}
+.lesson_common04 .box .copy{
+	text-align: center;
+}
+.lesson_common04 .box .copy p{
+	font-size: 0.8rem;
+	line-height: 2.35;
+}
+.lesson_common04 .box_in{
+	margin-top: 2rem;
+}
+.lesson_common04 .box_in .item{
+	margin-top: 3rem;
+}
+.lesson_common04 .box_in .item:first-of-type{
+	margin-top: 0;
+}
+.lesson_common04 .box_in .item .img{
+	border-radius: 6px;
+	overflow: hidden;
+	margin-left: -1rem;
+}
+.lesson_common04 .box_in .item .txt{
+	position: relative;
+	margin: -2.5rem -1rem 0 0;
+	z-index: 2;
+}
+.lesson_common04 .box_in .item .txt a{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 2.5rem 1.5rem 2rem;
+	border-radius: 6px;
+}
+.lesson_common04 .box_in .item .txt a h3{
+	font-size: 1.8rem;
+	line-height: 1;
+	letter-spacing: 0.3em;
+	margin-bottom: 1rem;
+}
+.lesson_common04 .box_in .item .txt a h4{
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+.lesson_common04 .box_in .item .txt a p{
+	font-size: 0.8rem;
+	line-height: 1.7;
+}
+.lesson_common04 .box_in .item .txt a .link_txt{
+	margin-top: 1.5rem;
+}
+.lesson_common04 .box_in .item .txt a .link_txt p{
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+.lesson_common04.basic_lesson04 .box_in .item .txt a .link_txt p{
+	color: #2e9648;
+}
+.lesson_common04 .box_in .item .txt a .link_txt p span{
+	position: relative;
+}
+.lesson_common04 .box_in .item .txt a .link_txt p span::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%) translateX(1rem);
+	background: url(../images/common/link_fig01.png) center center / contain no-repeat;
+	width: 3.55rem;
+	height: 0.45rem;
+	transition: .3s;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ lesson_common05 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common05{
+	padding: 2.5rem 0 3.5rem;
+}
+.lesson_common05 .lesson_wrap{
+	margin-top: 0;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ IE対策 ▼
 //
 ///////////////////////////////////////////////////*/

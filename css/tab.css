@@ -284,6 +284,24 @@ header nav ul li a{
 }
 /*///////////////////////////////////////////////////
 //
-//            ▼ school03 ▼
+//            ▼ lesson_common03 ▼
 //
 ///////////////////////////////////////////////////*/
+.lesson_common03 .box .img{
+	width: 45%;
+}
+.lesson_common03 .box .txt{
+	width: 55%;
+	padding-left: 4%;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ basic_lesson04 ▼
+//
+///////////////////////////////////////////////////*/
+.lesson_common04 .box_in .item .txt a h3{
+	font-size: 2.6rem;
+}
+.lesson_common04 .box_in .item .txt a .link_txt{
+	margin-top: 1.5rem;
+}
